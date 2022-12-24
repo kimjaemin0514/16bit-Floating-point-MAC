@@ -1,0 +1,2049 @@
+
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : TOP
+Version: O-2018.06-SP4
+Date   : Fri Dec 23 10:12:38 2022
+****************************************
+
+Operating Conditions: ff1p16vn40c   Library: saed32rvt_ff1p16vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: toop/AB1_reg[10]
+              (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Endpoint: OutOfBound (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  floatingmac        16000                 saed32rvt_ff1p16vn40c
+  floatingadd        8000                  saed32rvt_ff1p16vn40c
+  floatingadd_DW01_sub_1
+                     ForQA                 saed32rvt_ff1p16vn40c
+  floatingadd_DW_mult_uns_2
+                     ForQA                 saed32rvt_ff1p16vn40c
+  floatingadd_DW01_add_8
+                     ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  toop/AB1_reg[10]/CLK (DFFARX1_RVT)                      0.00       0.00 r
+  toop/AB1_reg[10]/Q (DFFARX1_RVT)                        0.06       0.06 f
+  toop/mac2/A[10] (floatingadd)                           0.00       0.06 f
+  toop/mac2/U640/Y (INVX0_RVT)                            0.02       0.08 r
+  toop/mac2/U654/Y (OR2X1_RVT)                            0.02       0.10 r
+  toop/mac2/sub_698/U2_1/CO (FADDX1_RVT)                  0.03       0.13 r
+  toop/mac2/sub_698/U2_2/CO (FADDX1_RVT)                  0.03       0.16 r
+  toop/mac2/sub_698/U2_3/S (FADDX1_RVT)                   0.04       0.20 f
+  toop/mac2/U43/Y (INVX1_RVT)                             0.03       0.24 r
+  toop/mac2/U364/Y (INVX1_RVT)                            0.03       0.26 f
+  toop/mac2/U15/Y (INVX1_RVT)                             0.05       0.32 r
+  toop/mac2/U902/Y (AND2X1_RVT)                           0.02       0.33 r
+  toop/mac2/U903/Y (AND2X1_RVT)                           0.02       0.35 r
+  toop/mac2/sub_707/A[0] (floatingadd_DW01_sub_1)         0.00       0.35 r
+  toop/mac2/sub_707/U30/Y (OR2X1_RVT)                     0.02       0.37 r
+  toop/mac2/sub_707/U2_1/CO (FADDX1_RVT)                  0.03       0.40 r
+  toop/mac2/sub_707/U2_2/CO (FADDX1_RVT)                  0.03       0.43 r
+  toop/mac2/sub_707/U2_3/CO (FADDX1_RVT)                  0.03       0.46 r
+  toop/mac2/sub_707/U2_4/CO (FADDX1_RVT)                  0.03       0.50 r
+  toop/mac2/sub_707/U2_5/CO (FADDX1_RVT)                  0.03       0.53 r
+  toop/mac2/sub_707/U2_6/CO (FADDX1_RVT)                  0.03       0.56 r
+  toop/mac2/sub_707/U2_7/CO (FADDX1_RVT)                  0.03       0.59 r
+  toop/mac2/sub_707/U2_8/CO (FADDX1_RVT)                  0.03       0.62 r
+  toop/mac2/sub_707/U2_9/CO (FADDX1_RVT)                  0.03       0.65 r
+  toop/mac2/sub_707/U31/Y (AND2X1_RVT)                    0.02       0.67 r
+  toop/mac2/sub_707/U17/Y (OR2X1_RVT)                     0.02       0.69 r
+  toop/mac2/sub_707/U18/Y (OR2X1_RVT)                     0.02       0.72 r
+  toop/mac2/sub_707/U19/Y (OR2X1_RVT)                     0.02       0.74 r
+  toop/mac2/sub_707/U20/Y (OR2X1_RVT)                     0.02       0.76 r
+  toop/mac2/sub_707/U21/Y (OR2X1_RVT)                     0.02       0.78 r
+  toop/mac2/sub_707/U22/Y (OR2X1_RVT)                     0.02       0.81 r
+  toop/mac2/sub_707/U23/Y (OR2X1_RVT)                     0.02       0.83 r
+  toop/mac2/sub_707/U24/Y (OR2X1_RVT)                     0.02       0.85 r
+  toop/mac2/sub_707/U25/Y (OR2X1_RVT)                     0.02       0.87 r
+  toop/mac2/sub_707/U26/Y (OR2X1_RVT)                     0.02       0.90 r
+  toop/mac2/sub_707/U27/Y (OR2X1_RVT)                     0.02       0.92 r
+  toop/mac2/sub_707/U28/Y (OR2X1_RVT)                     0.02       0.94 r
+  toop/mac2/sub_707/U1/Y (XNOR2X1_RVT)                    0.04       0.98 r
+  toop/mac2/sub_707/DIFF[23] (floatingadd_DW01_sub_1)     0.00       0.98 r
+  toop/mac2/U421/Y (AO22X1_RVT)                           0.04       1.02 r
+  toop/mac2/U147/Y (INVX0_RVT)                            0.01       1.03 f
+  toop/mac2/U411/Y (OA221X1_RVT)                          0.03       1.06 f
+  toop/mac2/U405/Y (OA221X1_RVT)                          0.03       1.09 f
+  toop/mac2/U25/Y (OAI221X1_RVT)                          0.04       1.13 r
+  toop/mac2/U83/Y (AO221X1_RVT)                           0.03       1.16 r
+  toop/mac2/U179/Y (AND2X1_RVT)                           0.02       1.18 r
+  toop/mac2/mult_add_723_aco/b (floatingadd_DW_mult_uns_2)
+                                                          0.00       1.18 r
+  toop/mac2/mult_add_723_aco/U61/Y (INVX1_RVT)            0.01       1.19 f
+  toop/mac2/mult_add_723_aco/U62/Y (INVX0_RVT)            0.05       1.24 r
+  toop/mac2/mult_add_723_aco/U70/Y (AND2X1_RVT)           0.02       1.25 r
+  toop/mac2/mult_add_723_aco/product[2] (floatingadd_DW_mult_uns_2)
+                                                          0.00       1.25 r
+  toop/mac2/add_723_aco/B[2] (floatingadd_DW01_add_8)     0.00       1.25 r
+  toop/mac2/add_723_aco/U1_2/CO (FADDX1_RVT)              0.03       1.29 r
+  toop/mac2/add_723_aco/U1_3/CO (FADDX1_RVT)              0.03       1.32 r
+  toop/mac2/add_723_aco/U1_4/CO (FADDX1_RVT)              0.03       1.35 r
+  toop/mac2/add_723_aco/U1_5/CO (FADDX1_RVT)              0.03       1.38 r
+  toop/mac2/add_723_aco/U1_6/CO (FADDX1_RVT)              0.03       1.41 r
+  toop/mac2/add_723_aco/U1_7/CO (FADDX1_RVT)              0.03       1.44 r
+  toop/mac2/add_723_aco/U1_8/CO (FADDX1_RVT)              0.03       1.47 r
+  toop/mac2/add_723_aco/U1_9/CO (FADDX1_RVT)              0.03       1.50 r
+  toop/mac2/add_723_aco/U1_10/CO (FADDX1_RVT)             0.03       1.53 r
+  toop/mac2/add_723_aco/U1_11/CO (FADDX1_RVT)             0.03       1.57 r
+  toop/mac2/add_723_aco/U1_12/CO (FADDX1_RVT)             0.03       1.60 r
+  toop/mac2/add_723_aco/U1_13/CO (FADDX1_RVT)             0.03       1.63 r
+  toop/mac2/add_723_aco/U1_14/CO (FADDX1_RVT)             0.03       1.66 r
+  toop/mac2/add_723_aco/U1_15/CO (FADDX1_RVT)             0.03       1.69 r
+  toop/mac2/add_723_aco/U1_16/CO (FADDX1_RVT)             0.03       1.72 r
+  toop/mac2/add_723_aco/U1_17/CO (FADDX1_RVT)             0.03       1.75 r
+  toop/mac2/add_723_aco/U1_18/CO (FADDX1_RVT)             0.03       1.78 r
+  toop/mac2/add_723_aco/U1_19/CO (FADDX1_RVT)             0.03       1.82 r
+  toop/mac2/add_723_aco/U1_20/CO (FADDX1_RVT)             0.03       1.85 r
+  toop/mac2/add_723_aco/U1_21/CO (FADDX1_RVT)             0.03       1.88 r
+  toop/mac2/add_723_aco/U1_22/CO (FADDX1_RVT)             0.03       1.91 r
+  toop/mac2/add_723_aco/U1_23/S (FADDX1_RVT)              0.04       1.95 f
+  toop/mac2/add_723_aco/SUM[23] (floatingadd_DW01_add_8)
+                                                          0.00       1.95 f
+  toop/mac2/U52/Y (INVX1_RVT)                             0.01       1.96 r
+  toop/mac2/U141/Y (OAI22X1_RVT)                          0.02       1.99 f
+  toop/mac2/U362/Y (AO221X1_RVT)                          0.02       2.01 f
+  toop/mac2/U632/Y (INVX0_RVT)                            0.01       2.02 r
+  toop/mac2/U293/Y (OA22X1_RVT)                           0.02       2.04 r
+  toop/mac2/U292/Y (OA221X1_RVT)                          0.02       2.06 r
+  toop/mac2/U291/Y (OA222X1_RVT)                          0.02       2.08 r
+  toop/mac2/U13/Y (OA222X1_RVT)                           0.03       2.11 r
+  toop/mac2/U10/Y (NOR2X1_RVT)                            0.05       2.16 f
+  toop/mac2/U24/Y (AOI22X1_RVT)                           0.03       2.18 r
+  toop/mac2/U87/Y (NAND3X0_RVT)                           0.01       2.20 f
+  toop/mac2/OutOfBound (floatingadd)                      0.00       2.20 f
+  toop/OutOfBound (floatingmac)                           0.00       2.20 f
+  OutOfBound (out)                                        0.00       2.20 f
+  data arrival time                                                  2.20
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  output external delay                                  -2.00       2.50
+  data required time                                                 2.50
+  --------------------------------------------------------------------------
+  data required time                                                 2.50
+  data arrival time                                                 -2.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.30
+
+
+
+  Startpoint: A[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: toop/mac1/s2/booth/acc1_reg[4][11]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  adder_subractor_0  8000                  saed32rvt_ff1p16vn40c
+  ksa12_0            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  ksa12_11           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  ksa12_10           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  ksa12_9            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  A[0] (in)                                               0.02       2.02 r
+  toop/A[0] (floatingmac)                                 0.00       2.02 r
+  toop/mac1/A[0] (floatingmul)                            0.00       2.02 r
+  toop/mac1/s2/A[0] (fraction)                            0.00       2.02 r
+  toop/mac1/s2/booth/multiplier[0] (booth_multiplier)     0.00       2.02 r
+  toop/mac1/s2/booth/step1/Q[0] (booth_substep_0)         0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/cin (adder_subractor_0)
+                                                          0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/i1 (xor2_140)        0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.06 f
+  toop/mac1/s2/booth/step1/addsub/x4/o (xor2_140)         0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/b[4] (ksa12_0)      0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/b[4] (pg_cell_0)
+                                                          0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.03       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/p[4] (pg_cell_0)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p0 (black_cell_296)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/U1/Y (AND2X1_RVT)
+                                                          0.02       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p (black_cell_296)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p0 (black_cell_285)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p (black_cell_285)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p1 (black_cell_280)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p (black_cell_280)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/p1 (gray_cell_137)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/g (gray_cell_137)
+                                                          0.00       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/U10/Y (XOR2X1_RVT)
+                                                          0.04       2.20 r
+  toop/mac1/s2/booth/step1/addsub/KSA/sum[8] (ksa12_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/addsub/sum[8] (adder_subractor_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/U5/Y (AO22X1_RVT)              0.03       2.23 r
+  toop/mac1/s2/booth/step1/next_acc[7] (booth_substep_0)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/acc[7] (booth_substep_11)      0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/i0[7] (adder_subractor_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/a[7] (ksa12_11)     0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/a[7] (pg_cell_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/p[7] (pg_cell_11)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_8/p0 (black_cell_268)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_8/U1/Y (AND2X1_RVT)
+                                                          0.02       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_8/p (black_cell_268)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_9/p0 (black_cell_257)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_9/U1/Y (AND2X1_RVT)
+                                                          0.02       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_9/p (black_cell_257)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_7/p1 (black_cell_252)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_7/p (black_cell_252)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_3/p1 (gray_cell_122)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_3/g (gray_cell_122)
+                                                          0.00       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.38 r
+  toop/mac1/s2/booth/step2/addsub/KSA/sum[11] (ksa12_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/addsub/sum[11] (adder_subractor_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/U12/Y (AO22X1_RVT)             0.04       2.42 r
+  toop/mac1/s2/booth/step2/next_acc[10] (booth_substep_11)
+                                                          0.00       2.42 r
+  toop/mac1/s2/booth/step3/acc[10] (booth_substep_10)     0.00       2.42 r
+  toop/mac1/s2/booth/step3/addsub/i0[10] (adder_subractor_10)
+                                                          0.00       2.42 r
+  toop/mac1/s2/booth/step3/addsub/KSA/a[10] (ksa12_10)
+                                                          0.00       2.42 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/a[10] (pg_cell_10)
+                                                          0.00       2.42 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/p[10] (pg_cell_10)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_10/p1 (black_cell_241)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_10/U1/Y (AND2X1_RVT)
+                                                          0.02       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_10/p (black_cell_241)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_9/p1 (black_cell_232)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_9/U1/Y (AND2X1_RVT)
+                                                          0.02       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_9/p (black_cell_232)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_7/p1 (black_cell_227)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_7/p (black_cell_227)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_3/p1 (gray_cell_110)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_3/g (gray_cell_110)
+                                                          0.00       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.57 r
+  toop/mac1/s2/booth/step3/addsub/KSA/sum[11] (ksa12_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/addsub/sum[11] (adder_subractor_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/U12/Y (AO22X1_RVT)             0.04       2.61 r
+  toop/mac1/s2/booth/step3/next_acc[10] (booth_substep_10)
+                                                          0.00       2.61 r
+  toop/mac1/s2/booth/step4/acc[10] (booth_substep_9)      0.00       2.61 r
+  toop/mac1/s2/booth/step4/addsub/i0[10] (adder_subractor_9)
+                                                          0.00       2.61 r
+  toop/mac1/s2/booth/step4/addsub/KSA/a[10] (ksa12_9)     0.00       2.61 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/a[10] (pg_cell_9)
+                                                          0.00       2.61 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/p[10] (pg_cell_9)
+                                                          0.00       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_10/p1 (black_cell_216)
+                                                          0.00       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_10/U1/Y (AND2X1_RVT)
+                                                          0.02       2.67 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_10/p (black_cell_216)
+                                                          0.00       2.67 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_9/p1 (black_cell_207)
+                                                          0.00       2.67 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_9/U1/Y (AND2X1_RVT)
+                                                          0.02       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_9/p (black_cell_207)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_7/p1 (black_cell_202)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.70 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_7/p (black_cell_202)
+                                                          0.00       2.70 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_3/p1 (gray_cell_98)
+                                                          0.00       2.70 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.72 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_3/g (gray_cell_98)
+                                                          0.00       2.72 f
+  toop/mac1/s2/booth/step4/addsub/KSA/U3/Y (XOR2X1_RVT)
+                                                          0.04       2.76 r
+  toop/mac1/s2/booth/step4/addsub/KSA/sum[11] (ksa12_9)
+                                                          0.00       2.76 r
+  toop/mac1/s2/booth/step4/addsub/sum[11] (adder_subractor_9)
+                                                          0.00       2.76 r
+  toop/mac1/s2/booth/step4/U12/Y (AO22X1_RVT)             0.03       2.78 r
+  toop/mac1/s2/booth/step4/next_acc[11] (booth_substep_9)
+                                                          0.00       2.78 r
+  toop/mac1/s2/booth/acc1_reg[4][11]/D (DFFARX1_RVT)      0.00       2.78 r
+  data arrival time                                                  2.78
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  toop/mac1/s2/booth/acc1_reg[4][11]/CLK (DFFARX1_RVT)
+                                                          0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.70
+
+
+
+  Startpoint: A[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: toop/mac1/s2/booth/acc1_reg[4][10]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  adder_subractor_0  8000                  saed32rvt_ff1p16vn40c
+  ksa12_0            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  ksa12_11           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  ksa12_10           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  ksa12_9            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  A[0] (in)                                               0.02       2.02 r
+  toop/A[0] (floatingmac)                                 0.00       2.02 r
+  toop/mac1/A[0] (floatingmul)                            0.00       2.02 r
+  toop/mac1/s2/A[0] (fraction)                            0.00       2.02 r
+  toop/mac1/s2/booth/multiplier[0] (booth_multiplier)     0.00       2.02 r
+  toop/mac1/s2/booth/step1/Q[0] (booth_substep_0)         0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/cin (adder_subractor_0)
+                                                          0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/i1 (xor2_140)        0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.06 f
+  toop/mac1/s2/booth/step1/addsub/x4/o (xor2_140)         0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/b[4] (ksa12_0)      0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/b[4] (pg_cell_0)
+                                                          0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.03       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/p[4] (pg_cell_0)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p0 (black_cell_296)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/U1/Y (AND2X1_RVT)
+                                                          0.02       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p (black_cell_296)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p0 (black_cell_285)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p (black_cell_285)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p1 (black_cell_280)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p (black_cell_280)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/p1 (gray_cell_137)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/g (gray_cell_137)
+                                                          0.00       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/U10/Y (XOR2X1_RVT)
+                                                          0.04       2.20 r
+  toop/mac1/s2/booth/step1/addsub/KSA/sum[8] (ksa12_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/addsub/sum[8] (adder_subractor_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/U5/Y (AO22X1_RVT)              0.03       2.23 r
+  toop/mac1/s2/booth/step1/next_acc[7] (booth_substep_0)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/acc[7] (booth_substep_11)      0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/i0[7] (adder_subractor_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/a[7] (ksa12_11)     0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/a[7] (pg_cell_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/p[7] (pg_cell_11)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_8/p0 (black_cell_268)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_8/U1/Y (AND2X1_RVT)
+                                                          0.02       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_8/p (black_cell_268)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_9/p0 (black_cell_257)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_9/U1/Y (AND2X1_RVT)
+                                                          0.02       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_9/p (black_cell_257)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_7/p1 (black_cell_252)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_7/p (black_cell_252)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_3/p1 (gray_cell_122)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_3/g (gray_cell_122)
+                                                          0.00       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.38 r
+  toop/mac1/s2/booth/step2/addsub/KSA/sum[11] (ksa12_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/addsub/sum[11] (adder_subractor_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/U12/Y (AO22X1_RVT)             0.04       2.42 r
+  toop/mac1/s2/booth/step2/next_acc[10] (booth_substep_11)
+                                                          0.00       2.42 r
+  toop/mac1/s2/booth/step3/acc[10] (booth_substep_10)     0.00       2.42 r
+  toop/mac1/s2/booth/step3/addsub/i0[10] (adder_subractor_10)
+                                                          0.00       2.42 r
+  toop/mac1/s2/booth/step3/addsub/KSA/a[10] (ksa12_10)
+                                                          0.00       2.42 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/a[10] (pg_cell_10)
+                                                          0.00       2.42 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/p[10] (pg_cell_10)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_10/p1 (black_cell_241)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_10/U1/Y (AND2X1_RVT)
+                                                          0.02       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_10/p (black_cell_241)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_9/p1 (black_cell_232)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_9/U1/Y (AND2X1_RVT)
+                                                          0.02       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_9/p (black_cell_232)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_7/p1 (black_cell_227)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_7/p (black_cell_227)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_3/p1 (gray_cell_110)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_3/g (gray_cell_110)
+                                                          0.00       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.57 r
+  toop/mac1/s2/booth/step3/addsub/KSA/sum[11] (ksa12_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/addsub/sum[11] (adder_subractor_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/U12/Y (AO22X1_RVT)             0.04       2.61 r
+  toop/mac1/s2/booth/step3/next_acc[10] (booth_substep_10)
+                                                          0.00       2.61 r
+  toop/mac1/s2/booth/step4/acc[10] (booth_substep_9)      0.00       2.61 r
+  toop/mac1/s2/booth/step4/addsub/i0[10] (adder_subractor_9)
+                                                          0.00       2.61 r
+  toop/mac1/s2/booth/step4/addsub/KSA/a[10] (ksa12_9)     0.00       2.61 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/a[10] (pg_cell_9)
+                                                          0.00       2.61 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/p[10] (pg_cell_9)
+                                                          0.00       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_10/p1 (black_cell_216)
+                                                          0.00       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_10/U1/Y (AND2X1_RVT)
+                                                          0.02       2.67 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_10/p (black_cell_216)
+                                                          0.00       2.67 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_9/p1 (black_cell_207)
+                                                          0.00       2.67 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_9/U1/Y (AND2X1_RVT)
+                                                          0.02       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_9/p (black_cell_207)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_7/p1 (black_cell_202)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.70 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_7/p (black_cell_202)
+                                                          0.00       2.70 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_3/p1 (gray_cell_98)
+                                                          0.00       2.70 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.72 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_3/g (gray_cell_98)
+                                                          0.00       2.72 f
+  toop/mac1/s2/booth/step4/addsub/KSA/U3/Y (XOR2X1_RVT)
+                                                          0.04       2.76 r
+  toop/mac1/s2/booth/step4/addsub/KSA/sum[11] (ksa12_9)
+                                                          0.00       2.76 r
+  toop/mac1/s2/booth/step4/addsub/sum[11] (adder_subractor_9)
+                                                          0.00       2.76 r
+  toop/mac1/s2/booth/step4/U12/Y (AO22X1_RVT)             0.03       2.78 r
+  toop/mac1/s2/booth/step4/next_acc[10] (booth_substep_9)
+                                                          0.00       2.78 r
+  toop/mac1/s2/booth/acc1_reg[4][10]/D (DFFARX1_RVT)      0.00       2.78 r
+  data arrival time                                                  2.78
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  toop/mac1/s2/booth/acc1_reg[4][10]/CLK (DFFARX1_RVT)
+                                                          0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.70
+
+
+  Startpoint: A[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: toop/mac1/s2/booth/acc1_reg[4][7]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  adder_subractor_0  8000                  saed32rvt_ff1p16vn40c
+  ksa12_0            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  ksa12_11           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  ksa12_10           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  ksa12_9            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  A[0] (in)                                               0.02       2.02 r
+  toop/A[0] (floatingmac)                                 0.00       2.02 r
+  toop/mac1/A[0] (floatingmul)                            0.00       2.02 r
+  toop/mac1/s2/A[0] (fraction)                            0.00       2.02 r
+  toop/mac1/s2/booth/multiplier[0] (booth_multiplier)     0.00       2.02 r
+  toop/mac1/s2/booth/step1/Q[0] (booth_substep_0)         0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/cin (adder_subractor_0)
+                                                          0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/i1 (xor2_140)        0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.06 f
+  toop/mac1/s2/booth/step1/addsub/x4/o (xor2_140)         0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/b[4] (ksa12_0)      0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/b[4] (pg_cell_0)
+                                                          0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.03       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/p[4] (pg_cell_0)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p0 (black_cell_296)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/U1/Y (AND2X1_RVT)
+                                                          0.02       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p (black_cell_296)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p0 (black_cell_285)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p (black_cell_285)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p1 (black_cell_280)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p (black_cell_280)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/p1 (gray_cell_137)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/g (gray_cell_137)
+                                                          0.00       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/U10/Y (XOR2X1_RVT)
+                                                          0.04       2.20 r
+  toop/mac1/s2/booth/step1/addsub/KSA/sum[8] (ksa12_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/addsub/sum[8] (adder_subractor_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/U5/Y (AO22X1_RVT)              0.03       2.23 r
+  toop/mac1/s2/booth/step1/next_acc[7] (booth_substep_0)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/acc[7] (booth_substep_11)      0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/i0[7] (adder_subractor_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/a[7] (ksa12_11)     0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/a[7] (pg_cell_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/p[7] (pg_cell_11)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_7/p1 (black_cell_269)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_7/p (black_cell_269)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_6/p1 (black_cell_260)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_6/p (black_cell_260)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_4/p1 (black_cell_255)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_4/p (black_cell_255)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_0/p1 (gray_cell_125)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_0/g (gray_cell_125)
+                                                          0.00       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/U11/Y (XOR2X1_RVT)
+                                                          0.04       2.38 r
+  toop/mac1/s2/booth/step2/addsub/KSA/sum[8] (ksa12_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/addsub/sum[8] (adder_subractor_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/U5/Y (AO22X1_RVT)              0.03       2.41 r
+  toop/mac1/s2/booth/step2/next_acc[7] (booth_substep_11)
+                                                          0.00       2.41 r
+  toop/mac1/s2/booth/step3/acc[7] (booth_substep_10)      0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/i0[7] (adder_subractor_10)
+                                                          0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/KSA/a[7] (ksa12_10)     0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/a[7] (pg_cell_10)
+                                                          0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/U7/Y (XOR2X1_RVT)
+                                                          0.04       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/p[7] (pg_cell_10)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_7/p1 (black_cell_244)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_7/p (black_cell_244)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_6/p1 (black_cell_235)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_6/p (black_cell_235)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_4/p1 (black_cell_230)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_4/p (black_cell_230)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_0/p1 (gray_cell_113)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_0/g (gray_cell_113)
+                                                          0.00       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/U11/Y (XOR2X1_RVT)
+                                                          0.04       2.57 r
+  toop/mac1/s2/booth/step3/addsub/KSA/sum[8] (ksa12_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/addsub/sum[8] (adder_subractor_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/U5/Y (AO22X1_RVT)              0.03       2.60 r
+  toop/mac1/s2/booth/step3/next_acc[7] (booth_substep_10)
+                                                          0.00       2.60 r
+  toop/mac1/s2/booth/step4/acc[7] (booth_substep_9)       0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/i0[7] (adder_subractor_9)
+                                                          0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/KSA/a[7] (ksa12_9)      0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/a[7] (pg_cell_9)
+                                                          0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/U8/Y (XOR2X1_RVT)
+                                                          0.04       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/p[7] (pg_cell_9)
+                                                          0.00       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_7/p1 (black_cell_219)
+                                                          0.00       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_7/p (black_cell_219)
+                                                          0.00       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_6/p1 (black_cell_210)
+                                                          0.00       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_6/p (black_cell_210)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_4/p1 (black_cell_205)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.70 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_4/p (black_cell_205)
+                                                          0.00       2.70 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_0/p1 (gray_cell_101)
+                                                          0.00       2.70 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.72 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_0/g (gray_cell_101)
+                                                          0.00       2.72 f
+  toop/mac1/s2/booth/step4/addsub/KSA/U10/Y (XOR2X1_RVT)
+                                                          0.04       2.75 r
+  toop/mac1/s2/booth/step4/addsub/KSA/sum[8] (ksa12_9)
+                                                          0.00       2.75 r
+  toop/mac1/s2/booth/step4/addsub/sum[8] (adder_subractor_9)
+                                                          0.00       2.75 r
+  toop/mac1/s2/booth/step4/U5/Y (AO22X1_RVT)              0.03       2.78 r
+  toop/mac1/s2/booth/step4/next_acc[7] (booth_substep_9)
+                                                          0.00       2.78 r
+  toop/mac1/s2/booth/acc1_reg[4][7]/D (DFFARX1_RVT)       0.00       2.78 r
+  data arrival time                                                  2.78
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  toop/mac1/s2/booth/acc1_reg[4][7]/CLK (DFFARX1_RVT)     0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.71
+
+ Startpoint: A[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: toop/mac1/s2/booth/acc1_reg[4][8]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  adder_subractor_0  8000                  saed32rvt_ff1p16vn40c
+  ksa12_0            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  ksa12_11           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  ksa12_10           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  ksa12_9            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  A[0] (in)                                               0.02       2.02 r
+  toop/A[0] (floatingmac)                                 0.00       2.02 r
+  toop/mac1/A[0] (floatingmul)                            0.00       2.02 r
+  toop/mac1/s2/A[0] (fraction)                            0.00       2.02 r
+  toop/mac1/s2/booth/multiplier[0] (booth_multiplier)     0.00       2.02 r
+  toop/mac1/s2/booth/step1/Q[0] (booth_substep_0)         0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/cin (adder_subractor_0)
+                                                          0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/i1 (xor2_140)        0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.06 f
+  toop/mac1/s2/booth/step1/addsub/x4/o (xor2_140)         0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/b[4] (ksa12_0)      0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/b[4] (pg_cell_0)
+                                                          0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.03       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/p[4] (pg_cell_0)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p0 (black_cell_296)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/U1/Y (AND2X1_RVT)
+                                                          0.02       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p (black_cell_296)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p0 (black_cell_285)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p (black_cell_285)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p1 (black_cell_280)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p (black_cell_280)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/p1 (gray_cell_137)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/g (gray_cell_137)
+                                                          0.00       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/U10/Y (XOR2X1_RVT)
+                                                          0.04       2.20 r
+  toop/mac1/s2/booth/step1/addsub/KSA/sum[8] (ksa12_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/addsub/sum[8] (adder_subractor_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/U5/Y (AO22X1_RVT)              0.03       2.23 r
+  toop/mac1/s2/booth/step1/next_acc[7] (booth_substep_0)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/acc[7] (booth_substep_11)      0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/i0[7] (adder_subractor_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/a[7] (ksa12_11)     0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/a[7] (pg_cell_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/p[7] (pg_cell_11)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_7/p1 (black_cell_269)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_7/p (black_cell_269)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_6/p1 (black_cell_260)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_6/p (black_cell_260)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_4/p1 (black_cell_255)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_4/p (black_cell_255)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_0/p1 (gray_cell_125)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_0/g (gray_cell_125)
+                                                          0.00       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/U11/Y (XOR2X1_RVT)
+                                                          0.04       2.38 r
+  toop/mac1/s2/booth/step2/addsub/KSA/sum[8] (ksa12_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/addsub/sum[8] (adder_subractor_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/U5/Y (AO22X1_RVT)              0.03       2.41 r
+  toop/mac1/s2/booth/step2/next_acc[7] (booth_substep_11)
+                                                          0.00       2.41 r
+  toop/mac1/s2/booth/step3/acc[7] (booth_substep_10)      0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/i0[7] (adder_subractor_10)
+                                                          0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/KSA/a[7] (ksa12_10)     0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/a[7] (pg_cell_10)
+                                                          0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/U7/Y (XOR2X1_RVT)
+                                                          0.04       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/p[7] (pg_cell_10)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_7/p1 (black_cell_244)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_7/p (black_cell_244)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_6/p1 (black_cell_235)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_6/p (black_cell_235)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_4/p1 (black_cell_230)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_4/p (black_cell_230)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_0/p1 (gray_cell_113)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_0/g (gray_cell_113)
+                                                          0.00       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/U11/Y (XOR2X1_RVT)
+                                                          0.04       2.57 r
+  toop/mac1/s2/booth/step3/addsub/KSA/sum[8] (ksa12_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/addsub/sum[8] (adder_subractor_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/U5/Y (AO22X1_RVT)              0.03       2.60 r
+  toop/mac1/s2/booth/step3/next_acc[7] (booth_substep_10)
+                                                          0.00       2.60 r
+  toop/mac1/s2/booth/step4/acc[7] (booth_substep_9)       0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/i0[7] (adder_subractor_9)
+                                                          0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/KSA/a[7] (ksa12_9)      0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/a[7] (pg_cell_9)
+                                                          0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/U8/Y (XOR2X1_RVT)
+                                                          0.04       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/p[7] (pg_cell_9)
+                                                          0.00       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_8/p0 (black_cell_218)
+                                                          0.00       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_8/U1/Y (AND2X1_RVT)
+                                                          0.02       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_8/p (black_cell_218)
+                                                          0.00       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_7/p1 (black_cell_209)
+                                                          0.00       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_7/p (black_cell_209)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_5/p1 (black_cell_204)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_5/U1/Y (AND2X1_RVT)
+                                                          0.02       2.69 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_5/p (black_cell_204)
+                                                          0.00       2.69 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_1/p1 (gray_cell_100)
+                                                          0.00       2.69 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_1/U1/Y (AO21X1_RVT)
+                                                          0.02       2.72 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_1/g (gray_cell_100)
+                                                          0.00       2.72 f
+  toop/mac1/s2/booth/step4/addsub/KSA/U11/Y (XOR2X1_RVT)
+                                                          0.04       2.75 r
+  toop/mac1/s2/booth/step4/addsub/KSA/sum[9] (ksa12_9)
+                                                          0.00       2.75 r
+  toop/mac1/s2/booth/step4/addsub/sum[9] (adder_subractor_9)
+                                                          0.00       2.75 r
+  toop/mac1/s2/booth/step4/U4/Y (AO22X1_RVT)              0.03       2.78 r
+  toop/mac1/s2/booth/step4/next_acc[8] (booth_substep_9)
+                                                          0.00       2.78 r
+  toop/mac1/s2/booth/acc1_reg[4][8]/D (DFFARX1_RVT)       0.00       2.78 r
+  data arrival time                                                  2.78
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  toop/mac1/s2/booth/acc1_reg[4][8]/CLK (DFFARX1_RVT)     0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.71
+
+
+  Startpoint: A[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: toop/mac1/s2/booth/acc1_reg[4][9]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  adder_subractor_0  8000                  saed32rvt_ff1p16vn40c
+  ksa12_0            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  ksa12_11           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  ksa12_10           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  ksa12_9            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  A[0] (in)                                               0.02       2.02 r
+  toop/A[0] (floatingmac)                                 0.00       2.02 r
+  toop/mac1/A[0] (floatingmul)                            0.00       2.02 r
+  toop/mac1/s2/A[0] (fraction)                            0.00       2.02 r
+  toop/mac1/s2/booth/multiplier[0] (booth_multiplier)     0.00       2.02 r
+  toop/mac1/s2/booth/step1/Q[0] (booth_substep_0)         0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/cin (adder_subractor_0)
+                                                          0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/i1 (xor2_140)        0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x4/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.06 f
+  toop/mac1/s2/booth/step1/addsub/x4/o (xor2_140)         0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/b[4] (ksa12_0)      0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/b[4] (pg_cell_0)
+                                                          0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.03       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/p[4] (pg_cell_0)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p0 (black_cell_296)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/U1/Y (AND2X1_RVT)
+                                                          0.02       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_5/p (black_cell_296)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p0 (black_cell_285)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_6/p (black_cell_285)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p1 (black_cell_280)
+                                                          0.00       2.13 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_4/p (black_cell_280)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/p1 (gray_cell_137)
+                                                          0.00       2.14 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s4_0/g (gray_cell_137)
+                                                          0.00       2.16 f
+  toop/mac1/s2/booth/step1/addsub/KSA/U10/Y (XOR2X1_RVT)
+                                                          0.04       2.20 r
+  toop/mac1/s2/booth/step1/addsub/KSA/sum[8] (ksa12_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/addsub/sum[8] (adder_subractor_0)
+                                                          0.00       2.20 r
+  toop/mac1/s2/booth/step1/U5/Y (AO22X1_RVT)              0.03       2.23 r
+  toop/mac1/s2/booth/step1/next_acc[7] (booth_substep_0)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/acc[7] (booth_substep_11)      0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/i0[7] (adder_subractor_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/a[7] (ksa12_11)     0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/a[7] (pg_cell_11)
+                                                          0.00       2.23 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/p[7] (pg_cell_11)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_7/p1 (black_cell_269)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_7/p (black_cell_269)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_6/p1 (black_cell_260)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_6/p (black_cell_260)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_4/p1 (black_cell_255)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_4/p (black_cell_255)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_0/p1 (gray_cell_125)
+                                                          0.00       2.33 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s4_0/g (gray_cell_125)
+                                                          0.00       2.35 f
+  toop/mac1/s2/booth/step2/addsub/KSA/U11/Y (XOR2X1_RVT)
+                                                          0.04       2.38 r
+  toop/mac1/s2/booth/step2/addsub/KSA/sum[8] (ksa12_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/addsub/sum[8] (adder_subractor_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step2/U5/Y (AO22X1_RVT)              0.03       2.41 r
+  toop/mac1/s2/booth/step2/next_acc[7] (booth_substep_11)
+                                                          0.00       2.41 r
+  toop/mac1/s2/booth/step3/acc[7] (booth_substep_10)      0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/i0[7] (adder_subractor_10)
+                                                          0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/KSA/a[7] (ksa12_10)     0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/a[7] (pg_cell_10)
+                                                          0.00       2.41 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/U7/Y (XOR2X1_RVT)
+                                                          0.04       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/p[7] (pg_cell_10)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_7/p1 (black_cell_244)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_7/p (black_cell_244)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_6/p1 (black_cell_235)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_6/p (black_cell_235)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_4/p1 (black_cell_230)
+                                                          0.00       2.50 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_4/p (black_cell_230)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_0/p1 (gray_cell_113)
+                                                          0.00       2.51 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s4_0/g (gray_cell_113)
+                                                          0.00       2.53 f
+  toop/mac1/s2/booth/step3/addsub/KSA/U11/Y (XOR2X1_RVT)
+                                                          0.04       2.57 r
+  toop/mac1/s2/booth/step3/addsub/KSA/sum[8] (ksa12_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/addsub/sum[8] (adder_subractor_10)
+                                                          0.00       2.57 r
+  toop/mac1/s2/booth/step3/U5/Y (AO22X1_RVT)              0.03       2.60 r
+  toop/mac1/s2/booth/step3/next_acc[7] (booth_substep_10)
+                                                          0.00       2.60 r
+  toop/mac1/s2/booth/step4/acc[7] (booth_substep_9)       0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/i0[7] (adder_subractor_9)
+                                                          0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/KSA/a[7] (ksa12_9)      0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/a[7] (pg_cell_9)
+                                                          0.00       2.60 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/U8/Y (XOR2X1_RVT)
+                                                          0.04       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/p[7] (pg_cell_9)
+                                                          0.00       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_7/p1 (black_cell_219)
+                                                          0.00       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_7/U1/Y (AND2X1_RVT)
+                                                          0.02       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_7/p (black_cell_219)
+                                                          0.00       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_8/p0 (black_cell_208)
+                                                          0.00       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_8/U1/Y (AND2X1_RVT)
+                                                          0.02       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_8/p (black_cell_208)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_6/p1 (black_cell_203)
+                                                          0.00       2.68 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.69 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_6/p (black_cell_203)
+                                                          0.00       2.69 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_2/p1 (gray_cell_99)
+                                                          0.00       2.69 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_2/U1/Y (AO21X1_RVT)
+                                                          0.02       2.71 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s4_2/g (gray_cell_99)
+                                                          0.00       2.71 f
+  toop/mac1/s2/booth/step4/addsub/KSA/U2/Y (XOR2X1_RVT)
+                                                          0.04       2.75 r
+  toop/mac1/s2/booth/step4/addsub/KSA/sum[10] (ksa12_9)
+                                                          0.00       2.75 r
+  toop/mac1/s2/booth/step4/addsub/sum[10] (adder_subractor_9)
+                                                          0.00       2.75 r
+  toop/mac1/s2/booth/step4/U3/Y (AO22X1_RVT)              0.03       2.78 r
+  toop/mac1/s2/booth/step4/next_acc[9] (booth_substep_9)
+                                                          0.00       2.78 r
+  toop/mac1/s2/booth/acc1_reg[4][9]/D (DFFARX1_RVT)       0.00       2.78 r
+  data arrival time                                                  2.78
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  toop/mac1/s2/booth/acc1_reg[4][9]/CLK (DFFARX1_RVT)     0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.71
+
+
+  Startpoint: A[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: toop/mac1/s2/booth/acc1_reg[4][6]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  adder_subractor_0  8000                  saed32rvt_ff1p16vn40c
+  ksa12_0            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  ksa12_11           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  ksa12_10           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  ksa12_9            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  A[0] (in)                                               0.02       2.02 f
+  toop/A[0] (floatingmac)                                 0.00       2.02 f
+  toop/mac1/A[0] (floatingmul)                            0.00       2.02 f
+  toop/mac1/s2/A[0] (fraction)                            0.00       2.02 f
+  toop/mac1/s2/booth/multiplier[0] (booth_multiplier)     0.00       2.02 f
+  toop/mac1/s2/booth/step1/Q[0] (booth_substep_0)         0.00       2.02 f
+  toop/mac1/s2/booth/step1/addsub/cin (adder_subractor_0)
+                                                          0.00       2.02 f
+  toop/mac1/s2/booth/step1/addsub/x0/i1 (xor2_0)          0.00       2.02 f
+  toop/mac1/s2/booth/step1/addsub/x0/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.06 r
+  toop/mac1/s2/booth/step1/addsub/x0/o (xor2_0)           0.00       2.06 r
+  toop/mac1/s2/booth/step1/addsub/KSA/b[0] (ksa12_0)      0.00       2.06 r
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/b[0] (pg_cell_0)
+                                                          0.00       2.06 r
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/U11/Y (XOR2X1_RVT)
+                                                          0.03       2.09 r
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/p[0] (pg_cell_0)
+                                                          0.00       2.09 r
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_0/p1 (gray_cell_0)
+                                                          0.00       2.09 r
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_0/U1/Y (AO21X1_RVT)
+                                                          0.03       2.12 r
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_0/g (gray_cell_0)
+                                                          0.00       2.12 r
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_1/g0 (gray_cell_142)
+                                                          0.00       2.12 r
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_1/U1/Y (AO21X1_RVT)
+                                                          0.03       2.15 r
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_1/g (gray_cell_142)
+                                                          0.00       2.15 r
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_3/g0 (gray_cell_138)
+                                                          0.00       2.15 r
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.17 r
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_3/g (gray_cell_138)
+                                                          0.00       2.17 r
+  toop/mac1/s2/booth/step1/addsub/KSA/U8/Y (XOR2X1_RVT)
+                                                          0.03       2.20 f
+  toop/mac1/s2/booth/step1/addsub/KSA/sum[7] (ksa12_0)
+                                                          0.00       2.20 f
+  toop/mac1/s2/booth/step1/addsub/sum[7] (adder_subractor_0)
+                                                          0.00       2.20 f
+  toop/mac1/s2/booth/step1/U6/Y (AO22X1_RVT)              0.03       2.23 f
+  toop/mac1/s2/booth/step1/next_acc[6] (booth_substep_0)
+                                                          0.00       2.23 f
+  toop/mac1/s2/booth/step2/acc[6] (booth_substep_11)      0.00       2.23 f
+  toop/mac1/s2/booth/step2/addsub/i0[6] (adder_subractor_11)
+                                                          0.00       2.23 f
+  toop/mac1/s2/booth/step2/addsub/KSA/a[6] (ksa12_11)     0.00       2.23 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/a[6] (pg_cell_11)
+                                                          0.00       2.23 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/U7/Y (XOR2X1_RVT)
+                                                          0.04       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/p[6] (pg_cell_11)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_6/p1 (black_cell_270)
+                                                          0.00       2.27 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_6/p (black_cell_270)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_5/p1 (black_cell_261)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_5/U1/Y (AND2X1_RVT)
+                                                          0.02       2.30 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_5/p (black_cell_261)
+                                                          0.00       2.30 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_3/p1 (gray_cell_126)
+                                                          0.00       2.30 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.32 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_3/g (gray_cell_126)
+                                                          0.00       2.32 f
+  toop/mac1/s2/booth/step2/addsub/KSA/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.36 r
+  toop/mac1/s2/booth/step2/addsub/KSA/sum[7] (ksa12_11)
+                                                          0.00       2.36 r
+  toop/mac1/s2/booth/step2/addsub/sum[7] (adder_subractor_11)
+                                                          0.00       2.36 r
+  toop/mac1/s2/booth/step2/U6/Y (AO22X1_RVT)              0.03       2.39 r
+  toop/mac1/s2/booth/step2/next_acc[6] (booth_substep_11)
+                                                          0.00       2.39 r
+  toop/mac1/s2/booth/step3/acc[6] (booth_substep_10)      0.00       2.39 r
+  toop/mac1/s2/booth/step3/addsub/i0[6] (adder_subractor_10)
+                                                          0.00       2.39 r
+  toop/mac1/s2/booth/step3/addsub/KSA/a[6] (ksa12_10)     0.00       2.39 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/a[6] (pg_cell_10)
+                                                          0.00       2.39 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.43 f
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/p[6] (pg_cell_10)
+                                                          0.00       2.43 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_6/p1 (black_cell_245)
+                                                          0.00       2.43 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.45 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_6/p (black_cell_245)
+                                                          0.00       2.45 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_5/p1 (black_cell_236)
+                                                          0.00       2.45 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_5/U1/Y (AND2X1_RVT)
+                                                          0.02       2.47 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_5/p (black_cell_236)
+                                                          0.00       2.47 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_3/p1 (gray_cell_114)
+                                                          0.00       2.47 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.49 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_3/g (gray_cell_114)
+                                                          0.00       2.49 f
+  toop/mac1/s2/booth/step3/addsub/KSA/U6/Y (XOR2X1_RVT)
+                                                          0.04       2.53 r
+  toop/mac1/s2/booth/step3/addsub/KSA/sum[7] (ksa12_10)
+                                                          0.00       2.53 r
+  toop/mac1/s2/booth/step3/addsub/sum[7] (adder_subractor_10)
+                                                          0.00       2.53 r
+  toop/mac1/s2/booth/step3/U6/Y (AO22X1_RVT)              0.03       2.56 r
+  toop/mac1/s2/booth/step3/next_acc[6] (booth_substep_10)
+                                                          0.00       2.56 r
+  toop/mac1/s2/booth/step4/acc[6] (booth_substep_9)       0.00       2.56 r
+  toop/mac1/s2/booth/step4/addsub/i0[6] (adder_subractor_9)
+                                                          0.00       2.56 r
+  toop/mac1/s2/booth/step4/addsub/KSA/a[6] (ksa12_9)      0.00       2.56 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/a[6] (pg_cell_9)
+                                                          0.00       2.56 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/U4/Y (XOR2X1_RVT)
+                                                          0.04       2.60 f
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/p[6] (pg_cell_9)
+                                                          0.00       2.60 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_6/p1 (black_cell_220)
+                                                          0.00       2.60 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_6/U1/Y (AND2X1_RVT)
+                                                          0.02       2.62 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_6/p (black_cell_220)
+                                                          0.00       2.62 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_5/p1 (black_cell_211)
+                                                          0.00       2.62 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_5/U1/Y (AND2X1_RVT)
+                                                          0.02       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_5/p (black_cell_211)
+                                                          0.00       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_3/p1 (gray_cell_102)
+                                                          0.00       2.64 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_3/U1/Y (AO21X1_RVT)
+                                                          0.02       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_3/g (gray_cell_102)
+                                                          0.00       2.66 f
+  toop/mac1/s2/booth/step4/addsub/KSA/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.69 r
+  toop/mac1/s2/booth/step4/addsub/KSA/sum[7] (ksa12_9)
+                                                          0.00       2.69 r
+  toop/mac1/s2/booth/step4/addsub/sum[7] (adder_subractor_9)
+                                                          0.00       2.69 r
+  toop/mac1/s2/booth/step4/U6/Y (AO22X1_RVT)              0.03       2.72 r
+  toop/mac1/s2/booth/step4/next_acc[6] (booth_substep_9)
+                                                          0.00       2.72 r
+  toop/mac1/s2/booth/acc1_reg[4][6]/D (DFFARX1_RVT)       0.00       2.72 r
+  data arrival time                                                  2.72
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  toop/mac1/s2/booth/acc1_reg[4][6]/CLK (DFFARX1_RVT)     0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.76
+
+
+
+  Startpoint: A[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: toop/mac1/s2/booth/acc1_reg[4][3]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  adder_subractor_0  8000                  saed32rvt_ff1p16vn40c
+  ksa12_0            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  ksa12_11           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  ksa12_10           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  ksa12_9            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  A[0] (in)                                               0.02       2.02 r
+  toop/A[0] (floatingmac)                                 0.00       2.02 r
+  toop/mac1/A[0] (floatingmul)                            0.00       2.02 r
+  toop/mac1/s2/A[0] (fraction)                            0.00       2.02 r
+  toop/mac1/s2/booth/multiplier[0] (booth_multiplier)     0.00       2.02 r
+  toop/mac1/s2/booth/step1/Q[0] (booth_substep_0)         0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/cin (adder_subractor_0)
+                                                          0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x2/i1 (xor2_142)        0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x2/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.06 f
+  toop/mac1/s2/booth/step1/addsub/x2/o (xor2_142)         0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/b[2] (ksa12_0)      0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/b[2] (pg_cell_0)
+                                                          0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/U3/Y (XOR2X1_RVT)
+                                                          0.03       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/p[2] (pg_cell_0)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_3/p0 (black_cell_298)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_3/p (black_cell_298)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_2/p1 (black_cell_289)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.12 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_2/p (black_cell_289)
+                                                          0.00       2.12 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_0/p1 (gray_cell_141)
+                                                          0.00       2.12 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.15 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_0/g (gray_cell_141)
+                                                          0.00       2.15 f
+  toop/mac1/s2/booth/step1/addsub/KSA/U4/Y (XOR2X1_RVT)
+                                                          0.04       2.18 r
+  toop/mac1/s2/booth/step1/addsub/KSA/sum[4] (ksa12_0)
+                                                          0.00       2.18 r
+  toop/mac1/s2/booth/step1/addsub/sum[4] (adder_subractor_0)
+                                                          0.00       2.18 r
+  toop/mac1/s2/booth/step1/U9/Y (AO22X1_RVT)              0.03       2.21 r
+  toop/mac1/s2/booth/step1/next_acc[3] (booth_substep_0)
+                                                          0.00       2.21 r
+  toop/mac1/s2/booth/step2/acc[3] (booth_substep_11)      0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/i0[3] (adder_subractor_11)
+                                                          0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/KSA/a[3] (ksa12_11)     0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/a[3] (pg_cell_11)
+                                                          0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/U3/Y (XOR2X1_RVT)
+                                                          0.04       2.25 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/p[3] (pg_cell_11)
+                                                          0.00       2.25 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_3/p1 (black_cell_273)
+                                                          0.00       2.25 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.28 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_3/p (black_cell_273)
+                                                          0.00       2.28 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_2/p1 (black_cell_264)
+                                                          0.00       2.28 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_2/p (black_cell_264)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_0/p1 (gray_cell_129)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_0/g (gray_cell_129)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/U4/Y (XOR2X1_RVT)
+                                                          0.04       2.35 r
+  toop/mac1/s2/booth/step2/addsub/KSA/sum[4] (ksa12_11)
+                                                          0.00       2.35 r
+  toop/mac1/s2/booth/step2/addsub/sum[4] (adder_subractor_11)
+                                                          0.00       2.35 r
+  toop/mac1/s2/booth/step2/U9/Y (AO22X1_RVT)              0.03       2.38 r
+  toop/mac1/s2/booth/step2/next_acc[3] (booth_substep_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step3/acc[3] (booth_substep_10)      0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/i0[3] (adder_subractor_10)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/KSA/a[3] (ksa12_10)     0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/a[3] (pg_cell_10)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/U3/Y (XOR2X1_RVT)
+                                                          0.04       2.42 f
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/p[3] (pg_cell_10)
+                                                          0.00       2.42 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_3/p1 (black_cell_248)
+                                                          0.00       2.42 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.44 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_3/p (black_cell_248)
+                                                          0.00       2.44 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_2/p1 (black_cell_239)
+                                                          0.00       2.44 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_2/p (black_cell_239)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_0/p1 (gray_cell_117)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_0/g (gray_cell_117)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.52 r
+  toop/mac1/s2/booth/step3/addsub/KSA/sum[4] (ksa12_10)
+                                                          0.00       2.52 r
+  toop/mac1/s2/booth/step3/addsub/sum[4] (adder_subractor_10)
+                                                          0.00       2.52 r
+  toop/mac1/s2/booth/step3/U9/Y (AO22X1_RVT)              0.03       2.55 r
+  toop/mac1/s2/booth/step3/next_acc[3] (booth_substep_10)
+                                                          0.00       2.55 r
+  toop/mac1/s2/booth/step4/acc[3] (booth_substep_9)       0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/i0[3] (adder_subractor_9)
+                                                          0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/KSA/a[3] (ksa12_9)      0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/a[3] (pg_cell_9)
+                                                          0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/U7/Y (XOR2X1_RVT)
+                                                          0.04       2.59 f
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/p[3] (pg_cell_9)
+                                                          0.00       2.59 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_3/p1 (black_cell_223)
+                                                          0.00       2.59 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.61 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_3/p (black_cell_223)
+                                                          0.00       2.61 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_2/p1 (black_cell_214)
+                                                          0.00       2.61 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.63 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_2/p (black_cell_214)
+                                                          0.00       2.63 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_0/p1 (gray_cell_105)
+                                                          0.00       2.63 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_0/g (gray_cell_105)
+                                                          0.00       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/U7/Y (XOR2X1_RVT)
+                                                          0.04       2.69 r
+  toop/mac1/s2/booth/step4/addsub/KSA/sum[4] (ksa12_9)
+                                                          0.00       2.69 r
+  toop/mac1/s2/booth/step4/addsub/sum[4] (adder_subractor_9)
+                                                          0.00       2.69 r
+  toop/mac1/s2/booth/step4/U9/Y (AO22X1_RVT)              0.03       2.72 r
+  toop/mac1/s2/booth/step4/next_acc[3] (booth_substep_9)
+                                                          0.00       2.72 r
+  toop/mac1/s2/booth/acc1_reg[4][3]/D (DFFARX1_RVT)       0.00       2.72 r
+  data arrival time                                                  2.72
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  toop/mac1/s2/booth/acc1_reg[4][3]/CLK (DFFARX1_RVT)     0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+
+  Startpoint: A[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: toop/mac1/s2/booth/acc1_reg[4][4]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  adder_subractor_0  8000                  saed32rvt_ff1p16vn40c
+  ksa12_0            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  ksa12_11           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  ksa12_10           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  ksa12_9            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  A[0] (in)                                               0.02       2.02 r
+  toop/A[0] (floatingmac)                                 0.00       2.02 r
+  toop/mac1/A[0] (floatingmul)                            0.00       2.02 r
+  toop/mac1/s2/A[0] (fraction)                            0.00       2.02 r
+  toop/mac1/s2/booth/multiplier[0] (booth_multiplier)     0.00       2.02 r
+  toop/mac1/s2/booth/step1/Q[0] (booth_substep_0)         0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/cin (adder_subractor_0)
+                                                          0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x2/i1 (xor2_142)        0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x2/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.06 f
+  toop/mac1/s2/booth/step1/addsub/x2/o (xor2_142)         0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/b[2] (ksa12_0)      0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/b[2] (pg_cell_0)
+                                                          0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/U3/Y (XOR2X1_RVT)
+                                                          0.03       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/p[2] (pg_cell_0)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_3/p0 (black_cell_298)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_3/p (black_cell_298)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_2/p1 (black_cell_289)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.12 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_2/p (black_cell_289)
+                                                          0.00       2.12 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_0/p1 (gray_cell_141)
+                                                          0.00       2.12 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.15 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_0/g (gray_cell_141)
+                                                          0.00       2.15 f
+  toop/mac1/s2/booth/step1/addsub/KSA/U4/Y (XOR2X1_RVT)
+                                                          0.04       2.18 r
+  toop/mac1/s2/booth/step1/addsub/KSA/sum[4] (ksa12_0)
+                                                          0.00       2.18 r
+  toop/mac1/s2/booth/step1/addsub/sum[4] (adder_subractor_0)
+                                                          0.00       2.18 r
+  toop/mac1/s2/booth/step1/U9/Y (AO22X1_RVT)              0.03       2.21 r
+  toop/mac1/s2/booth/step1/next_acc[3] (booth_substep_0)
+                                                          0.00       2.21 r
+  toop/mac1/s2/booth/step2/acc[3] (booth_substep_11)      0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/i0[3] (adder_subractor_11)
+                                                          0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/KSA/a[3] (ksa12_11)     0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/a[3] (pg_cell_11)
+                                                          0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/U3/Y (XOR2X1_RVT)
+                                                          0.04       2.25 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/p[3] (pg_cell_11)
+                                                          0.00       2.25 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_3/p1 (black_cell_273)
+                                                          0.00       2.25 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.28 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_3/p (black_cell_273)
+                                                          0.00       2.28 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_2/p1 (black_cell_264)
+                                                          0.00       2.28 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_2/p (black_cell_264)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_0/p1 (gray_cell_129)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_0/g (gray_cell_129)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/U4/Y (XOR2X1_RVT)
+                                                          0.04       2.35 r
+  toop/mac1/s2/booth/step2/addsub/KSA/sum[4] (ksa12_11)
+                                                          0.00       2.35 r
+  toop/mac1/s2/booth/step2/addsub/sum[4] (adder_subractor_11)
+                                                          0.00       2.35 r
+  toop/mac1/s2/booth/step2/U9/Y (AO22X1_RVT)              0.03       2.38 r
+  toop/mac1/s2/booth/step2/next_acc[3] (booth_substep_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step3/acc[3] (booth_substep_10)      0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/i0[3] (adder_subractor_10)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/KSA/a[3] (ksa12_10)     0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/a[3] (pg_cell_10)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/U3/Y (XOR2X1_RVT)
+                                                          0.04       2.42 f
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/p[3] (pg_cell_10)
+                                                          0.00       2.42 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_3/p1 (black_cell_248)
+                                                          0.00       2.42 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.44 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_3/p (black_cell_248)
+                                                          0.00       2.44 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_2/p1 (black_cell_239)
+                                                          0.00       2.44 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_2/p (black_cell_239)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_0/p1 (gray_cell_117)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_0/g (gray_cell_117)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.52 r
+  toop/mac1/s2/booth/step3/addsub/KSA/sum[4] (ksa12_10)
+                                                          0.00       2.52 r
+  toop/mac1/s2/booth/step3/addsub/sum[4] (adder_subractor_10)
+                                                          0.00       2.52 r
+  toop/mac1/s2/booth/step3/U9/Y (AO22X1_RVT)              0.03       2.55 r
+  toop/mac1/s2/booth/step3/next_acc[3] (booth_substep_10)
+                                                          0.00       2.55 r
+  toop/mac1/s2/booth/step4/acc[3] (booth_substep_9)       0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/i0[3] (adder_subractor_9)
+                                                          0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/KSA/a[3] (ksa12_9)      0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/a[3] (pg_cell_9)
+                                                          0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/U7/Y (XOR2X1_RVT)
+                                                          0.04       2.59 f
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/p[3] (pg_cell_9)
+                                                          0.00       2.59 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_4/p0 (black_cell_222)
+                                                          0.00       2.59 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.61 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_4/p (black_cell_222)
+                                                          0.00       2.61 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_3/p1 (black_cell_213)
+                                                          0.00       2.61 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.63 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_3/p (black_cell_213)
+                                                          0.00       2.63 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_1/p1 (gray_cell_104)
+                                                          0.00       2.63 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_1/U1/Y (AO21X1_RVT)
+                                                          0.02       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_1/g (gray_cell_104)
+                                                          0.00       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/U8/Y (XOR2X1_RVT)
+                                                          0.04       2.69 r
+  toop/mac1/s2/booth/step4/addsub/KSA/sum[5] (ksa12_9)
+                                                          0.00       2.69 r
+  toop/mac1/s2/booth/step4/addsub/sum[5] (adder_subractor_9)
+                                                          0.00       2.69 r
+  toop/mac1/s2/booth/step4/U8/Y (AO22X1_RVT)              0.03       2.71 r
+  toop/mac1/s2/booth/step4/next_acc[4] (booth_substep_9)
+                                                          0.00       2.71 r
+  toop/mac1/s2/booth/acc1_reg[4][4]/D (DFFARX1_RVT)       0.00       2.71 r
+  data arrival time                                                  2.71
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  toop/mac1/s2/booth/acc1_reg[4][4]/CLK (DFFARX1_RVT)     0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: A[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: toop/mac1/s2/booth/acc1_reg[4][5]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                16000                 saed32rvt_ff1p16vn40c
+  adder_subractor_0  8000                  saed32rvt_ff1p16vn40c
+  ksa12_0            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  ksa12_11           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  ksa12_10           8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  ksa12_9            8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  A[0] (in)                                               0.02       2.02 r
+  toop/A[0] (floatingmac)                                 0.00       2.02 r
+  toop/mac1/A[0] (floatingmul)                            0.00       2.02 r
+  toop/mac1/s2/A[0] (fraction)                            0.00       2.02 r
+  toop/mac1/s2/booth/multiplier[0] (booth_multiplier)     0.00       2.02 r
+  toop/mac1/s2/booth/step1/Q[0] (booth_substep_0)         0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/cin (adder_subractor_0)
+                                                          0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x2/i1 (xor2_142)        0.00       2.02 r
+  toop/mac1/s2/booth/step1/addsub/x2/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.06 f
+  toop/mac1/s2/booth/step1/addsub/x2/o (xor2_142)         0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/b[2] (ksa12_0)      0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/b[2] (pg_cell_0)
+                                                          0.00       2.06 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/U3/Y (XOR2X1_RVT)
+                                                          0.03       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/stage0/p[2] (pg_cell_0)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_3/p0 (black_cell_298)
+                                                          0.00       2.08 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s1_3/p (black_cell_298)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_2/p1 (black_cell_289)
+                                                          0.00       2.11 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.12 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s2_2/p (black_cell_289)
+                                                          0.00       2.12 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_0/p1 (gray_cell_141)
+                                                          0.00       2.12 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.15 f
+  toop/mac1/s2/booth/step1/addsub/KSA/s3_0/g (gray_cell_141)
+                                                          0.00       2.15 f
+  toop/mac1/s2/booth/step1/addsub/KSA/U4/Y (XOR2X1_RVT)
+                                                          0.04       2.18 r
+  toop/mac1/s2/booth/step1/addsub/KSA/sum[4] (ksa12_0)
+                                                          0.00       2.18 r
+  toop/mac1/s2/booth/step1/addsub/sum[4] (adder_subractor_0)
+                                                          0.00       2.18 r
+  toop/mac1/s2/booth/step1/U9/Y (AO22X1_RVT)              0.03       2.21 r
+  toop/mac1/s2/booth/step1/next_acc[3] (booth_substep_0)
+                                                          0.00       2.21 r
+  toop/mac1/s2/booth/step2/acc[3] (booth_substep_11)      0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/i0[3] (adder_subractor_11)
+                                                          0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/KSA/a[3] (ksa12_11)     0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/a[3] (pg_cell_11)
+                                                          0.00       2.21 r
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/U3/Y (XOR2X1_RVT)
+                                                          0.04       2.25 f
+  toop/mac1/s2/booth/step2/addsub/KSA/stage0/p[3] (pg_cell_11)
+                                                          0.00       2.25 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_3/p1 (black_cell_273)
+                                                          0.00       2.25 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.28 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s1_3/p (black_cell_273)
+                                                          0.00       2.28 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_2/p1 (black_cell_264)
+                                                          0.00       2.28 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s2_2/p (black_cell_264)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_0/p1 (gray_cell_129)
+                                                          0.00       2.29 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/s3_0/g (gray_cell_129)
+                                                          0.00       2.31 f
+  toop/mac1/s2/booth/step2/addsub/KSA/U4/Y (XOR2X1_RVT)
+                                                          0.04       2.35 r
+  toop/mac1/s2/booth/step2/addsub/KSA/sum[4] (ksa12_11)
+                                                          0.00       2.35 r
+  toop/mac1/s2/booth/step2/addsub/sum[4] (adder_subractor_11)
+                                                          0.00       2.35 r
+  toop/mac1/s2/booth/step2/U9/Y (AO22X1_RVT)              0.03       2.38 r
+  toop/mac1/s2/booth/step2/next_acc[3] (booth_substep_11)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step3/acc[3] (booth_substep_10)      0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/i0[3] (adder_subractor_10)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/KSA/a[3] (ksa12_10)     0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/a[3] (pg_cell_10)
+                                                          0.00       2.38 r
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/U3/Y (XOR2X1_RVT)
+                                                          0.04       2.42 f
+  toop/mac1/s2/booth/step3/addsub/KSA/stage0/p[3] (pg_cell_10)
+                                                          0.00       2.42 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_3/p1 (black_cell_248)
+                                                          0.00       2.42 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.44 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s1_3/p (black_cell_248)
+                                                          0.00       2.44 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_2/p1 (black_cell_239)
+                                                          0.00       2.44 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_2/U1/Y (AND2X1_RVT)
+                                                          0.02       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s2_2/p (black_cell_239)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_0/p1 (gray_cell_117)
+                                                          0.00       2.46 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_0/U1/Y (AO21X1_RVT)
+                                                          0.02       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/s3_0/g (gray_cell_117)
+                                                          0.00       2.48 f
+  toop/mac1/s2/booth/step3/addsub/KSA/U9/Y (XOR2X1_RVT)
+                                                          0.04       2.52 r
+  toop/mac1/s2/booth/step3/addsub/KSA/sum[4] (ksa12_10)
+                                                          0.00       2.52 r
+  toop/mac1/s2/booth/step3/addsub/sum[4] (adder_subractor_10)
+                                                          0.00       2.52 r
+  toop/mac1/s2/booth/step3/U9/Y (AO22X1_RVT)              0.03       2.55 r
+  toop/mac1/s2/booth/step3/next_acc[3] (booth_substep_10)
+                                                          0.00       2.55 r
+  toop/mac1/s2/booth/step4/acc[3] (booth_substep_9)       0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/i0[3] (adder_subractor_9)
+                                                          0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/KSA/a[3] (ksa12_9)      0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/a[3] (pg_cell_9)
+                                                          0.00       2.55 r
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/U7/Y (XOR2X1_RVT)
+                                                          0.04       2.59 f
+  toop/mac1/s2/booth/step4/addsub/KSA/stage0/p[3] (pg_cell_9)
+                                                          0.00       2.59 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_3/p1 (black_cell_223)
+                                                          0.00       2.59 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_3/U1/Y (AND2X1_RVT)
+                                                          0.02       2.61 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s1_3/p (black_cell_223)
+                                                          0.00       2.61 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_4/p0 (black_cell_212)
+                                                          0.00       2.61 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_4/U1/Y (AND2X1_RVT)
+                                                          0.02       2.63 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s2_4/p (black_cell_212)
+                                                          0.00       2.63 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_2/p1 (gray_cell_103)
+                                                          0.00       2.63 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_2/U1/Y (AO21X1_RVT)
+                                                          0.02       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/s3_2/g (gray_cell_103)
+                                                          0.00       2.65 f
+  toop/mac1/s2/booth/step4/addsub/KSA/U1/Y (XOR2X1_RVT)
+                                                          0.04       2.69 r
+  toop/mac1/s2/booth/step4/addsub/KSA/sum[6] (ksa12_9)
+                                                          0.00       2.69 r
+  toop/mac1/s2/booth/step4/addsub/sum[6] (adder_subractor_9)
+                                                          0.00       2.69 r
+  toop/mac1/s2/booth/step4/U7/Y (AO22X1_RVT)              0.03       2.71 r
+  toop/mac1/s2/booth/step4/next_acc[5] (booth_substep_9)
+                                                          0.00       2.71 r
+  toop/mac1/s2/booth/acc1_reg[4][5]/D (DFFARX1_RVT)       0.00       2.71 r
+  data arrival time                                                  2.71
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  toop/mac1/s2/booth/acc1_reg[4][5]/CLK (DFFARX1_RVT)     0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77

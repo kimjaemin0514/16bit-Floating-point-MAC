@@ -1,0 +1,90 @@
+`timescale 1ns / 1ps
+module TB_TOP;
+
+	// Inputs
+	reg [15:0] A;
+	reg [15:0] B;
+	reg [15:0] C;
+	reg CLK, RESETn;
+
+	// Outputs
+	wire [15:0] Y;
+	wire OutOfBound;
+
+	// Instantiate the Unit Under Test (UUT)
+	TOP UTOP (
+		.A(A), 
+		.B(B), 
+		.C(C), 
+		.Y(Y), 
+		.OutOfBound(OutOfBound), 
+		.CLK(CLK),
+		.RESETn(RESETn)
+	);
+
+	initial begin
+		// Initialize Inputs
+		A = 16'hace;
+		B = 16'hcac7;
+		C = 16'h0ab9;
+		CLK = 1;
+		RESETn = 1;
+		#10
+		A = 16'h2ace;
+		B = 16'hcac7;
+		C = 16'h0ab9;
+		#10
+		A = 16'h6c2a;
+		B = 16'h9ab3;
+		C = 16'h5973;
+		#10
+		A = 16'h058d;
+		B = 16'heee8;
+		C = 16'h1389;
+		#10
+		A = 16'h1389;
+		B = 16'hb89e;
+		C = 16'h0ab9;
+		#10
+		A = 16'habc5;
+		B = 16'h9f12;
+		C = 16'h5b64;
+		#10
+		A = 16'h5b64;
+		B = 16'h058e;
+		C = 16'hcac7;
+		#10
+		A = 16'h0ab9;
+		B = 16'hcac7;
+		C = 16'h0ab9;
+		#10
+		A = 16'b1_00001_0000000001;
+		B = 16'b1_00001_0000000001;	
+		C = 16'h2084;
+		#10
+		A = 16'h2601;
+		B = 16'h2084;
+		C = 16'h0ab9;
+		#10
+		A = 16'h1744;
+		B = 16'h2864;
+		C = 16'h1744;
+		#10
+		A = 16'h2704;
+		B = 16'h5973;
+		C = 16'h2084;
+		#10
+		A = 16'h1509;
+		B = 16'h58a7;
+		C = 16'habc5;
+		
+
+
+		// Wait 100 ns for global reset to finish
+		#200;
+		$finish;        
+		// Add stimulus here
+
+	end
+	always #5 CLK=~CLK;
+endmodule

@@ -1,0 +1,431 @@
+
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : CLA_12bit
+Version: O-2018.06-SP4
+Date   : Wed Dec 21 14:11:42 2022
+****************************************
+
+Operating Conditions: ff1p16vn40c   Library: saed32rvt_ff1p16vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: ci (input port clocked by MAIN_CLOCK)
+  Endpoint: sum[11] (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+  CLA4_1             ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  ci (in)                                  0.00       2.00 r
+  CarryLogic_2/Ci (CLALogic_3)             0.00       2.00 r
+  CarryLogic_2/U6/Y (AO21X1_RVT)           0.03       2.03 r
+  CarryLogic_2/U5/Y (AO21X1_RVT)           0.03       2.06 r
+  CarryLogic_2/C[2] (CLALogic_3)           0.00       2.06 r
+  u2/Ci (CLA4_1)                           0.00       2.06 r
+  u2/CarryLogic/Ci (CLALogic_4_1)          0.00       2.06 r
+  u2/CarryLogic/U8/Y (AO21X1_RVT)          0.03       2.09 r
+  u2/CarryLogic/U7/Y (AO21X1_RVT)          0.03       2.11 r
+  u2/CarryLogic/U6/Y (AO21X1_RVT)          0.03       2.14 r
+  u2/CarryLogic/C[3] (CLALogic_4_1)        0.00       2.14 r
+  u2/FA3/Cin (GPFullAdder_1)               0.00       2.14 r
+  u2/FA3/U1/Y (XOR2X1_RVT)                 0.03       2.17 f
+  u2/FA3/Sum (GPFullAdder_1)               0.00       2.17 f
+  u2/S[3] (CLA4_1)                         0.00       2.17 f
+  sum[11] (out)                            0.00       2.17 f
+  data arrival time                                   2.17
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -2.17
+  -----------------------------------------------------------
+  slack (MET)                                         0.33
+
+
+  Startpoint: ci (input port clocked by MAIN_CLOCK)
+  Endpoint: sum[10] (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+  CLA4_1             ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  ci (in)                                  0.00       2.00 r
+  CarryLogic_2/Ci (CLALogic_3)             0.00       2.00 r
+  CarryLogic_2/U6/Y (AO21X1_RVT)           0.03       2.03 r
+  CarryLogic_2/U5/Y (AO21X1_RVT)           0.03       2.06 r
+  CarryLogic_2/C[2] (CLALogic_3)           0.00       2.06 r
+  u2/Ci (CLA4_1)                           0.00       2.06 r
+  u2/CarryLogic/Ci (CLALogic_4_1)          0.00       2.06 r
+  u2/CarryLogic/U8/Y (AO21X1_RVT)          0.03       2.09 r
+  u2/CarryLogic/U7/Y (AO21X1_RVT)          0.03       2.11 r
+  u2/CarryLogic/C[2] (CLALogic_4_1)        0.00       2.11 r
+  u2/FA2/Cin (GPFullAdder_2)               0.00       2.11 r
+  u2/FA2/U1/Y (XOR2X1_RVT)                 0.03       2.15 f
+  u2/FA2/Sum (GPFullAdder_2)               0.00       2.15 f
+  u2/S[2] (CLA4_1)                         0.00       2.15 f
+  sum[10] (out)                            0.00       2.15 f
+  data arrival time                                   2.15
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -2.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.35
+
+
+  Startpoint: ci (input port clocked by MAIN_CLOCK)
+  Endpoint: sum[7] (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+  CLA4_2             ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  ci (in)                                  0.00       2.00 r
+  CarryLogic_2/Ci (CLALogic_3)             0.00       2.00 r
+  CarryLogic_2/U6/Y (AO21X1_RVT)           0.03       2.03 r
+  CarryLogic_2/C[1] (CLALogic_3)           0.00       2.03 r
+  u1/Ci (CLA4_2)                           0.00       2.03 r
+  u1/CarryLogic/Ci (CLALogic_4_2)          0.00       2.03 r
+  u1/CarryLogic/U8/Y (AO21X1_RVT)          0.03       2.06 r
+  u1/CarryLogic/U7/Y (AO21X1_RVT)          0.03       2.08 r
+  u1/CarryLogic/U6/Y (AO21X1_RVT)          0.03       2.11 r
+  u1/CarryLogic/C[3] (CLALogic_4_2)        0.00       2.11 r
+  u1/FA3/Cin (GPFullAdder_5)               0.00       2.11 r
+  u1/FA3/U1/Y (XOR2X1_RVT)                 0.03       2.14 f
+  u1/FA3/Sum (GPFullAdder_5)               0.00       2.14 f
+  u1/S[3] (CLA4_2)                         0.00       2.14 f
+  sum[7] (out)                             0.00       2.14 f
+  data arrival time                                   2.14
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -2.14
+  -----------------------------------------------------------
+  slack (MET)                                         0.36
+
+
+  Startpoint: ci (input port clocked by MAIN_CLOCK)
+  Endpoint: sum[9] (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+  CLA4_1             ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  ci (in)                                  0.00       2.00 r
+  CarryLogic_2/Ci (CLALogic_3)             0.00       2.00 r
+  CarryLogic_2/U6/Y (AO21X1_RVT)           0.03       2.03 r
+  CarryLogic_2/U5/Y (AO21X1_RVT)           0.03       2.06 r
+  CarryLogic_2/C[2] (CLALogic_3)           0.00       2.06 r
+  u2/Ci (CLA4_1)                           0.00       2.06 r
+  u2/CarryLogic/Ci (CLALogic_4_1)          0.00       2.06 r
+  u2/CarryLogic/U8/Y (AO21X1_RVT)          0.03       2.09 r
+  u2/CarryLogic/C[1] (CLALogic_4_1)        0.00       2.09 r
+  u2/FA1/Cin (GPFullAdder_3)               0.00       2.09 r
+  u2/FA1/U1/Y (XOR2X1_RVT)                 0.03       2.12 f
+  u2/FA1/Sum (GPFullAdder_3)               0.00       2.12 f
+  u2/S[1] (CLA4_1)                         0.00       2.12 f
+  sum[9] (out)                             0.00       2.12 f
+  data arrival time                                   2.12
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -2.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.38
+
+
+  Startpoint: ci (input port clocked by MAIN_CLOCK)
+  Endpoint: sum[6] (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+  CLA4_2             ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  ci (in)                                  0.00       2.00 r
+  CarryLogic_2/Ci (CLALogic_3)             0.00       2.00 r
+  CarryLogic_2/U6/Y (AO21X1_RVT)           0.03       2.03 r
+  CarryLogic_2/C[1] (CLALogic_3)           0.00       2.03 r
+  u1/Ci (CLA4_2)                           0.00       2.03 r
+  u1/CarryLogic/Ci (CLALogic_4_2)          0.00       2.03 r
+  u1/CarryLogic/U8/Y (AO21X1_RVT)          0.03       2.06 r
+  u1/CarryLogic/U7/Y (AO21X1_RVT)          0.03       2.08 r
+  u1/CarryLogic/C[2] (CLALogic_4_2)        0.00       2.08 r
+  u1/FA2/Cin (GPFullAdder_6)               0.00       2.08 r
+  u1/FA2/U1/Y (XOR2X1_RVT)                 0.03       2.12 f
+  u1/FA2/Sum (GPFullAdder_6)               0.00       2.12 f
+  u1/S[2] (CLA4_2)                         0.00       2.12 f
+  sum[6] (out)                             0.00       2.12 f
+  data arrival time                                   2.12
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -2.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.38
+
+
+  Startpoint: ci (input port clocked by MAIN_CLOCK)
+  Endpoint: sum[8] (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  ci (in)                                  0.00       2.00 r
+  CarryLogic_2/Ci (CLALogic_3)             0.00       2.00 r
+  CarryLogic_2/U6/Y (AO21X1_RVT)           0.03       2.03 r
+  CarryLogic_2/U5/Y (AO21X1_RVT)           0.03       2.06 r
+  CarryLogic_2/C[2] (CLALogic_3)           0.00       2.06 r
+  u2/Ci (CLA4_1)                           0.00       2.06 r
+  u2/FA0/Cin (GPFullAdder_4)               0.00       2.06 r
+  u2/FA0/U1/Y (XOR2X1_RVT)                 0.03       2.09 f
+  u2/FA0/Sum (GPFullAdder_4)               0.00       2.09 f
+  u2/S[0] (CLA4_1)                         0.00       2.09 f
+  sum[8] (out)                             0.00       2.09 f
+  data arrival time                                   2.09
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -2.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.41
+
+
+  Startpoint: ci (input port clocked by MAIN_CLOCK)
+  Endpoint: sum[5] (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+  CLA4_2             ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  ci (in)                                  0.00       2.00 r
+  CarryLogic_2/Ci (CLALogic_3)             0.00       2.00 r
+  CarryLogic_2/U6/Y (AO21X1_RVT)           0.03       2.03 r
+  CarryLogic_2/C[1] (CLALogic_3)           0.00       2.03 r
+  u1/Ci (CLA4_2)                           0.00       2.03 r
+  u1/CarryLogic/Ci (CLALogic_4_2)          0.00       2.03 r
+  u1/CarryLogic/U8/Y (AO21X1_RVT)          0.03       2.06 r
+  u1/CarryLogic/C[1] (CLALogic_4_2)        0.00       2.06 r
+  u1/FA1/Cin (GPFullAdder_7)               0.00       2.06 r
+  u1/FA1/U1/Y (XOR2X1_RVT)                 0.03       2.09 f
+  u1/FA1/Sum (GPFullAdder_7)               0.00       2.09 f
+  u1/S[1] (CLA4_2)                         0.00       2.09 f
+  sum[5] (out)                             0.00       2.09 f
+  data arrival time                                   2.09
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -2.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.41
+
+
+  Startpoint: ci (input port clocked by MAIN_CLOCK)
+  Endpoint: cout (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  ci (in)                                  0.00       2.00 r
+  CarryLogic_2/Ci (CLALogic_3)             0.00       2.00 r
+  CarryLogic_2/U6/Y (AO21X1_RVT)           0.03       2.03 r
+  CarryLogic_2/U5/Y (AO21X1_RVT)           0.03       2.06 r
+  CarryLogic_2/U4/Y (AO21X1_RVT)           0.02       2.08 r
+  CarryLogic_2/Co (CLALogic_3)             0.00       2.08 r
+  cout (out)                               0.00       2.08 r
+  data arrival time                                   2.08
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -2.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: ci (input port clocked by MAIN_CLOCK)
+  Endpoint: sum[4] (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  ci (in)                                  0.00       2.00 r
+  CarryLogic_2/Ci (CLALogic_3)             0.00       2.00 r
+  CarryLogic_2/U6/Y (AO21X1_RVT)           0.03       2.03 r
+  CarryLogic_2/C[1] (CLALogic_3)           0.00       2.03 r
+  u1/Ci (CLA4_2)                           0.00       2.03 r
+  u1/FA0/Cin (GPFullAdder_8)               0.00       2.03 r
+  u1/FA0/U1/Y (XOR2X1_RVT)                 0.03       2.06 f
+  u1/FA0/Sum (GPFullAdder_8)               0.00       2.06 f
+  u1/S[0] (CLA4_2)                         0.00       2.06 f
+  sum[4] (out)                             0.00       2.06 f
+  data arrival time                                   2.06
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -2.06
+  -----------------------------------------------------------
+  slack (MET)                                         0.44
+
+
+  Startpoint: b0_reg[0] (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Endpoint: sum[3] (output port clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CLA_12bit          8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  b0_reg[0]/CLK (DFFX1_RVT)                0.00       0.00 r
+  b0_reg[0]/Q (DFFX1_RVT)                  0.05       0.05 f
+  u0/B[0] (CLA4_0)                         0.00       0.05 f
+  u0/FA0/Y (GPFullAdder_0)                 0.00       0.05 f
+  u0/FA0/U1/Y (XOR2X1_RVT)                 0.04       0.09 r
+  u0/FA0/P (GPFullAdder_0)                 0.00       0.09 r
+  u0/CarryLogic/P[0] (CLALogic_4_0)        0.00       0.09 r
+  u0/CarryLogic/U8/Y (AO21X1_RVT)          0.03       0.12 r
+  u0/CarryLogic/U7/Y (AO21X1_RVT)          0.03       0.15 r
+  u0/CarryLogic/U6/Y (AO21X1_RVT)          0.03       0.17 r
+  u0/CarryLogic/C[3] (CLALogic_4_0)        0.00       0.17 r
+  u0/FA3/Cin (GPFullAdder_9)               0.00       0.17 r
+  u0/FA3/U1/Y (XOR2X1_RVT)                 0.03       0.21 f
+  u0/FA3/Sum (GPFullAdder_9)               0.00       0.21 f
+  u0/S[3] (CLA4_0)                         0.00       0.21 f
+  sum[3] (out)                             0.00       0.21 f
+  data arrival time                                   0.21
+
+  clock MAIN_CLOCK (rise edge)             5.00       5.00
+  clock network delay (ideal)              0.00       5.00]
+  clock uncertainty                       -0.50       4.50
+  output external delay                   -2.00       2.50
+  data required time                                  2.50
+  -----------------------------------------------------------
+  data required time                                  2.50
+  data arrival time                                  -0.21
+  -----------------------------------------------------------
+  slack (MET)                                         2.29
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      1,1           Top

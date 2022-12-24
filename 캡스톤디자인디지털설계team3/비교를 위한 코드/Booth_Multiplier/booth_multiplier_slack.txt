@@ -1,0 +1,1510 @@
+
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : booth_multiplier
+Version: O-2018.06-SP4
+Date   : Wed Dec 21 14:28:53 2022
+****************************************
+
+Operating Conditions: ff1p16vn40c   Library: saed32rvt_ff1p16vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][11]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  CLA4_35            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_32            ForQA                 saed32rvt_ff1p16vn40c
+  CLALogic_4_32      ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_29            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_26            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_9        8000                  saed32rvt_ff1p16vn40c
+  CLA4_25            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/Ci (CLALogic_4_35)        0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.20 f
+  step1/myadd/CLA/u1/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.22 f
+  step1/myadd/CLA/u1/CarryLogic/U6/Y (AO21X1_RVT)         0.02       2.24 f
+  step1/myadd/CLA/u1/CarryLogic/C[3] (CLALogic_4_35)      0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/Cin (GPFullAdder_137)            0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.03       2.28 r
+  step1/myadd/CLA/u1/FA3/Sum (GPFullAdder_137)            0.00       2.28 r
+  step1/myadd/CLA/u1/S[3] (CLA4_35)                       0.00       2.28 r
+  step1/myadd/CLA/sum[7] (CLA_12bit_0)                    0.00       2.28 r
+  step1/myadd/sum[7] (eight_bit_adder_subractor_0)        0.00       2.28 r
+  step1/U6/Y (AO22X1_RVT)                                 0.03       2.31 r
+  step1/next_acc[6] (booth_substep_0)                     0.00       2.31 r
+  step2/acc[6] (booth_substep_11)                         0.00       2.31 r
+  step2/myadd/i0[6] (eight_bit_adder_subractor_11)        0.00       2.31 r
+  step2/myadd/CLA/a[6] (CLA_12bit_11)                     0.00       2.31 r
+  step2/myadd/CLA/u1/A[2] (CLA4_32)                       0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/X (GPFullAdder_126)              0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/U1/Y (XOR2X1_RVT)                0.04       2.35 f
+  step2/myadd/CLA/u1/FA2/P (GPFullAdder_126)              0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/P[2] (CLALogic_4_32)      0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/U3/Y (AO21X1_RVT)         0.02       2.37 f
+  step2/myadd/CLA/u1/CarryLogic/U2/Y (AO21X1_RVT)         0.02       2.39 f
+  step2/myadd/CLA/u1/CarryLogic/GG (CLALogic_4_32)        0.00       2.39 f
+  step2/myadd/CLA/u1/GG (CLA4_32)                         0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/G[1] (CLALogic_3_11)       0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.02       2.41 f
+  step2/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_11)       0.00       2.41 f
+  step2/myadd/CLA/u2/Ci (CLA4_31)                         0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/Cin (GPFullAdder_124)            0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.45 r
+  step2/myadd/CLA/u2/FA0/Sum (GPFullAdder_124)            0.00       2.45 r
+  step2/myadd/CLA/u2/S[0] (CLA4_31)                       0.00       2.45 r
+  step2/myadd/CLA/sum[8] (CLA_12bit_11)                   0.00       2.45 r
+  step2/myadd/sum[8] (eight_bit_adder_subractor_11)       0.00       2.45 r
+  step2/U5/Y (AO22X1_RVT)                                 0.03       2.48 r
+  step2/next_acc[7] (booth_substep_11)                    0.00       2.48 r
+  step3/acc[7] (booth_substep_10)                         0.00       2.48 r
+  step3/myadd/i0[7] (eight_bit_adder_subractor_10)        0.00       2.48 r
+  step3/myadd/CLA/a[7] (CLA_12bit_10)                     0.00       2.48 r
+  step3/myadd/CLA/u1/A[3] (CLA4_29)                       0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/X (GPFullAdder_113)              0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/U2/Y (XOR2X1_RVT)                0.04       2.52 f
+  step3/myadd/CLA/u1/FA3/P (GPFullAdder_113)              0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_29)      0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.55 f
+  step3/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_29)        0.00       2.55 f
+  step3/myadd/CLA/u1/PP (CLA4_29)                         0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_10)       0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.58 f
+  step3/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_10)       0.00       2.58 f
+  step3/myadd/CLA/u2/Ci (CLA4_28)                         0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/Cin (GPFullAdder_112)            0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.61 r
+  step3/myadd/CLA/u2/FA0/Sum (GPFullAdder_112)            0.00       2.61 r
+  step3/myadd/CLA/u2/S[0] (CLA4_28)                       0.00       2.61 r
+  step3/myadd/CLA/sum[8] (CLA_12bit_10)                   0.00       2.61 r
+  step3/myadd/sum[8] (eight_bit_adder_subractor_10)       0.00       2.61 r
+  step3/U5/Y (AO22X1_RVT)                                 0.03       2.64 r
+  step3/next_acc[7] (booth_substep_10)                    0.00       2.64 r
+  step4/acc[7] (booth_substep_9)                          0.00       2.64 r
+  step4/myadd/i0[7] (eight_bit_adder_subractor_9)         0.00       2.64 r
+  step4/myadd/CLA/a[7] (CLA_12bit_9)                      0.00       2.64 r
+  step4/myadd/CLA/u1/A[3] (CLA4_26)                       0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/X (GPFullAdder_101)              0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.04       2.68 f
+  step4/myadd/CLA/u1/FA3/P (GPFullAdder_101)              0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_26)      0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.71 f
+  step4/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_26)        0.00       2.71 f
+  step4/myadd/CLA/u1/PP (CLA4_26)                         0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_9)        0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.74 f
+  step4/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_9)        0.00       2.74 f
+  step4/myadd/CLA/u2/Ci (CLA4_25)                         0.00       2.74 f
+  step4/myadd/CLA/u2/CarryLogic/Ci (CLALogic_4_25)        0.00       2.74 f
+  step4/myadd/CLA/u2/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.76 f
+  step4/myadd/CLA/u2/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.79 f
+  step4/myadd/CLA/u2/CarryLogic/U6/Y (AO21X1_RVT)         0.02       2.81 f
+  step4/myadd/CLA/u2/CarryLogic/C[3] (CLALogic_4_25)      0.00       2.81 f
+  step4/myadd/CLA/u2/FA3/Cin (GPFullAdder_97)             0.00       2.81 f
+  step4/myadd/CLA/u2/FA3/U2/Y (XOR2X1_RVT)                0.03       2.84 r
+  step4/myadd/CLA/u2/FA3/Sum (GPFullAdder_97)             0.00       2.84 r
+  step4/myadd/CLA/u2/S[3] (CLA4_25)                       0.00       2.84 r
+  step4/myadd/CLA/sum[11] (CLA_12bit_9)                   0.00       2.84 r
+  step4/myadd/sum[11] (eight_bit_adder_subractor_9)       0.00       2.84 r
+  step4/U12/Y (AO22X1_RVT)                                0.03       2.87 r
+  step4/next_acc[11] (booth_substep_9)                    0.00       2.87 r
+  acc1_reg[4][11]/D (DFFARX1_RVT)                         0.00       2.87 r
+  data arrival time                                                  2.87
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][11]/CLK (DFFARX1_RVT)                       0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.61
+
+
+  Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][10]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  CLA4_35            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_32            ForQA                 saed32rvt_ff1p16vn40c
+  CLALogic_4_32      ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_29            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_26            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_9        8000                  saed32rvt_ff1p16vn40c
+  CLA4_25            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/Ci (CLALogic_4_35)        0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.20 f
+  step1/myadd/CLA/u1/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.22 f
+  step1/myadd/CLA/u1/CarryLogic/U6/Y (AO21X1_RVT)         0.02       2.24 f
+  step1/myadd/CLA/u1/CarryLogic/C[3] (CLALogic_4_35)      0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/Cin (GPFullAdder_137)            0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.03       2.28 r
+  step1/myadd/CLA/u1/FA3/Sum (GPFullAdder_137)            0.00       2.28 r
+  step1/myadd/CLA/u1/S[3] (CLA4_35)                       0.00       2.28 r
+  step1/myadd/CLA/sum[7] (CLA_12bit_0)                    0.00       2.28 r
+  step1/myadd/sum[7] (eight_bit_adder_subractor_0)        0.00       2.28 r
+  step1/U6/Y (AO22X1_RVT)                                 0.03       2.31 r
+  step1/next_acc[6] (booth_substep_0)                     0.00       2.31 r
+  step2/acc[6] (booth_substep_11)                         0.00       2.31 r
+  step2/myadd/i0[6] (eight_bit_adder_subractor_11)        0.00       2.31 r
+  step2/myadd/CLA/a[6] (CLA_12bit_11)                     0.00       2.31 r
+  step2/myadd/CLA/u1/A[2] (CLA4_32)                       0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/X (GPFullAdder_126)              0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/U1/Y (XOR2X1_RVT)                0.04       2.35 f
+  step2/myadd/CLA/u1/FA2/P (GPFullAdder_126)              0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/P[2] (CLALogic_4_32)      0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/U3/Y (AO21X1_RVT)         0.02       2.37 f
+  step2/myadd/CLA/u1/CarryLogic/U2/Y (AO21X1_RVT)         0.02       2.39 f
+  step2/myadd/CLA/u1/CarryLogic/GG (CLALogic_4_32)        0.00       2.39 f
+  step2/myadd/CLA/u1/GG (CLA4_32)                         0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/G[1] (CLALogic_3_11)       0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.02       2.41 f
+  step2/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_11)       0.00       2.41 f
+  step2/myadd/CLA/u2/Ci (CLA4_31)                         0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/Cin (GPFullAdder_124)            0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.45 r
+  step2/myadd/CLA/u2/FA0/Sum (GPFullAdder_124)            0.00       2.45 r
+  step2/myadd/CLA/u2/S[0] (CLA4_31)                       0.00       2.45 r
+  step2/myadd/CLA/sum[8] (CLA_12bit_11)                   0.00       2.45 r
+  step2/myadd/sum[8] (eight_bit_adder_subractor_11)       0.00       2.45 r
+  step2/U5/Y (AO22X1_RVT)                                 0.03       2.48 r
+  step2/next_acc[7] (booth_substep_11)                    0.00       2.48 r
+  step3/acc[7] (booth_substep_10)                         0.00       2.48 r
+  step3/myadd/i0[7] (eight_bit_adder_subractor_10)        0.00       2.48 r
+  step3/myadd/CLA/a[7] (CLA_12bit_10)                     0.00       2.48 r
+  step3/myadd/CLA/u1/A[3] (CLA4_29)                       0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/X (GPFullAdder_113)              0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/U2/Y (XOR2X1_RVT)                0.04       2.52 f
+  step3/myadd/CLA/u1/FA3/P (GPFullAdder_113)              0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_29)      0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.55 f
+  step3/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_29)        0.00       2.55 f
+  step3/myadd/CLA/u1/PP (CLA4_29)                         0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_10)       0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.58 f
+  step3/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_10)       0.00       2.58 f
+  step3/myadd/CLA/u2/Ci (CLA4_28)                         0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/Cin (GPFullAdder_112)            0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.61 r
+  step3/myadd/CLA/u2/FA0/Sum (GPFullAdder_112)            0.00       2.61 r
+  step3/myadd/CLA/u2/S[0] (CLA4_28)                       0.00       2.61 r
+  step3/myadd/CLA/sum[8] (CLA_12bit_10)                   0.00       2.61 r
+  step3/myadd/sum[8] (eight_bit_adder_subractor_10)       0.00       2.61 r
+  step3/U5/Y (AO22X1_RVT)                                 0.03       2.64 r
+  step3/next_acc[7] (booth_substep_10)                    0.00       2.64 r
+  step4/acc[7] (booth_substep_9)                          0.00       2.64 r
+  step4/myadd/i0[7] (eight_bit_adder_subractor_9)         0.00       2.64 r
+  step4/myadd/CLA/a[7] (CLA_12bit_9)                      0.00       2.64 r
+  step4/myadd/CLA/u1/A[3] (CLA4_26)                       0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/X (GPFullAdder_101)              0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.04       2.68 f
+  step4/myadd/CLA/u1/FA3/P (GPFullAdder_101)              0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_26)      0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.71 f
+  step4/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_26)        0.00       2.71 f
+  step4/myadd/CLA/u1/PP (CLA4_26)                         0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_9)        0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.74 f
+  step4/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_9)        0.00       2.74 f
+  step4/myadd/CLA/u2/Ci (CLA4_25)                         0.00       2.74 f
+  step4/myadd/CLA/u2/CarryLogic/Ci (CLALogic_4_25)        0.00       2.74 f
+  step4/myadd/CLA/u2/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.76 f
+  step4/myadd/CLA/u2/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.79 f
+  step4/myadd/CLA/u2/CarryLogic/U6/Y (AO21X1_RVT)         0.02       2.81 f
+  step4/myadd/CLA/u2/CarryLogic/C[3] (CLALogic_4_25)      0.00       2.81 f
+  step4/myadd/CLA/u2/FA3/Cin (GPFullAdder_97)             0.00       2.81 f
+  step4/myadd/CLA/u2/FA3/U2/Y (XOR2X1_RVT)                0.03       2.84 r
+  step4/myadd/CLA/u2/FA3/Sum (GPFullAdder_97)             0.00       2.84 r
+  step4/myadd/CLA/u2/S[3] (CLA4_25)                       0.00       2.84 r
+  step4/myadd/CLA/sum[11] (CLA_12bit_9)                   0.00       2.84 r
+  step4/myadd/sum[11] (eight_bit_adder_subractor_9)       0.00       2.84 r
+  step4/U12/Y (AO22X1_RVT)                                0.03       2.87 r
+  step4/next_acc[10] (booth_substep_9)                    0.00       2.87 r
+  acc1_reg[4][10]/D (DFFARX1_RVT)                         0.00       2.87 r
+  data arrival time                                                  2.87
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][10]/CLK (DFFARX1_RVT)                       0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.61
+
+
+  Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][9]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  CLA4_35            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_32            ForQA                 saed32rvt_ff1p16vn40c
+  CLALogic_4_32      ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_29            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_26            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_9        8000                  saed32rvt_ff1p16vn40c
+  CLA4_25            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/Ci (CLALogic_4_35)        0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.20 f
+  step1/myadd/CLA/u1/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.22 f
+  step1/myadd/CLA/u1/CarryLogic/U6/Y (AO21X1_RVT)         0.02       2.24 f
+  step1/myadd/CLA/u1/CarryLogic/C[3] (CLALogic_4_35)      0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/Cin (GPFullAdder_137)            0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.03       2.28 r
+  step1/myadd/CLA/u1/FA3/Sum (GPFullAdder_137)            0.00       2.28 r
+  step1/myadd/CLA/u1/S[3] (CLA4_35)                       0.00       2.28 r
+  step1/myadd/CLA/sum[7] (CLA_12bit_0)                    0.00       2.28 r
+  step1/myadd/sum[7] (eight_bit_adder_subractor_0)        0.00       2.28 r
+  step1/U6/Y (AO22X1_RVT)                                 0.03       2.31 r
+  step1/next_acc[6] (booth_substep_0)                     0.00       2.31 r
+  step2/acc[6] (booth_substep_11)                         0.00       2.31 r
+  step2/myadd/i0[6] (eight_bit_adder_subractor_11)        0.00       2.31 r
+  step2/myadd/CLA/a[6] (CLA_12bit_11)                     0.00       2.31 r
+  step2/myadd/CLA/u1/A[2] (CLA4_32)                       0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/X (GPFullAdder_126)              0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/U1/Y (XOR2X1_RVT)                0.04       2.35 f
+  step2/myadd/CLA/u1/FA2/P (GPFullAdder_126)              0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/P[2] (CLALogic_4_32)      0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/U3/Y (AO21X1_RVT)         0.02       2.37 f
+  step2/myadd/CLA/u1/CarryLogic/U2/Y (AO21X1_RVT)         0.02       2.39 f
+  step2/myadd/CLA/u1/CarryLogic/GG (CLALogic_4_32)        0.00       2.39 f
+  step2/myadd/CLA/u1/GG (CLA4_32)                         0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/G[1] (CLALogic_3_11)       0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.02       2.41 f
+  step2/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_11)       0.00       2.41 f
+  step2/myadd/CLA/u2/Ci (CLA4_31)                         0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/Cin (GPFullAdder_124)            0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.45 r
+  step2/myadd/CLA/u2/FA0/Sum (GPFullAdder_124)            0.00       2.45 r
+  step2/myadd/CLA/u2/S[0] (CLA4_31)                       0.00       2.45 r
+  step2/myadd/CLA/sum[8] (CLA_12bit_11)                   0.00       2.45 r
+  step2/myadd/sum[8] (eight_bit_adder_subractor_11)       0.00       2.45 r
+  step2/U5/Y (AO22X1_RVT)                                 0.03       2.48 r
+  step2/next_acc[7] (booth_substep_11)                    0.00       2.48 r
+  step3/acc[7] (booth_substep_10)                         0.00       2.48 r
+  step3/myadd/i0[7] (eight_bit_adder_subractor_10)        0.00       2.48 r
+  step3/myadd/CLA/a[7] (CLA_12bit_10)                     0.00       2.48 r
+  step3/myadd/CLA/u1/A[3] (CLA4_29)                       0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/X (GPFullAdder_113)              0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/U2/Y (XOR2X1_RVT)                0.04       2.52 f
+  step3/myadd/CLA/u1/FA3/P (GPFullAdder_113)              0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_29)      0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.55 f
+  step3/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_29)        0.00       2.55 f
+  step3/myadd/CLA/u1/PP (CLA4_29)                         0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_10)       0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.58 f
+  step3/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_10)       0.00       2.58 f
+  step3/myadd/CLA/u2/Ci (CLA4_28)                         0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/Cin (GPFullAdder_112)            0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.61 r
+  step3/myadd/CLA/u2/FA0/Sum (GPFullAdder_112)            0.00       2.61 r
+  step3/myadd/CLA/u2/S[0] (CLA4_28)                       0.00       2.61 r
+  step3/myadd/CLA/sum[8] (CLA_12bit_10)                   0.00       2.61 r
+  step3/myadd/sum[8] (eight_bit_adder_subractor_10)       0.00       2.61 r
+  step3/U5/Y (AO22X1_RVT)                                 0.03       2.64 r
+  step3/next_acc[7] (booth_substep_10)                    0.00       2.64 r
+  step4/acc[7] (booth_substep_9)                          0.00       2.64 r
+  step4/myadd/i0[7] (eight_bit_adder_subractor_9)         0.00       2.64 r
+  step4/myadd/CLA/a[7] (CLA_12bit_9)                      0.00       2.64 r
+  step4/myadd/CLA/u1/A[3] (CLA4_26)                       0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/X (GPFullAdder_101)              0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.04       2.68 f
+  step4/myadd/CLA/u1/FA3/P (GPFullAdder_101)              0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_26)      0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.71 f
+  step4/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_26)        0.00       2.71 f
+  step4/myadd/CLA/u1/PP (CLA4_26)                         0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_9)        0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.74 f
+  step4/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_9)        0.00       2.74 f
+  step4/myadd/CLA/u2/Ci (CLA4_25)                         0.00       2.74 f
+  step4/myadd/CLA/u2/CarryLogic/Ci (CLALogic_4_25)        0.00       2.74 f
+  step4/myadd/CLA/u2/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.76 f
+  step4/myadd/CLA/u2/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.79 f
+  step4/myadd/CLA/u2/CarryLogic/C[2] (CLALogic_4_25)      0.00       2.79 f
+  step4/myadd/CLA/u2/FA2/Cin (GPFullAdder_98)             0.00       2.79 f
+  step4/myadd/CLA/u2/FA2/U2/Y (XOR2X1_RVT)                0.03       2.82 r
+  step4/myadd/CLA/u2/FA2/Sum (GPFullAdder_98)             0.00       2.82 r
+  step4/myadd/CLA/u2/S[2] (CLA4_25)                       0.00       2.82 r
+  step4/myadd/CLA/sum[10] (CLA_12bit_9)                   0.00       2.82 r
+  step4/myadd/sum[10] (eight_bit_adder_subractor_9)       0.00       2.82 r
+  step4/U3/Y (AO22X1_RVT)                                 0.03       2.85 r
+  step4/next_acc[9] (booth_substep_9)                     0.00       2.85 r
+  acc1_reg[4][9]/D (DFFARX1_RVT)                          0.00       2.85 r
+  data arrival time                                                  2.85
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][9]/CLK (DFFARX1_RVT)                        0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.64
+
+ Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][8]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  CLA4_35            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_32            ForQA                 saed32rvt_ff1p16vn40c
+  CLALogic_4_32      ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_29            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_26            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_9        8000                  saed32rvt_ff1p16vn40c
+  CLA4_25            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/Ci (CLALogic_4_35)        0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.20 f
+  step1/myadd/CLA/u1/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.22 f
+  step1/myadd/CLA/u1/CarryLogic/U6/Y (AO21X1_RVT)         0.02       2.24 f
+  step1/myadd/CLA/u1/CarryLogic/C[3] (CLALogic_4_35)      0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/Cin (GPFullAdder_137)            0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.03       2.28 r
+  step1/myadd/CLA/u1/FA3/Sum (GPFullAdder_137)            0.00       2.28 r
+  step1/myadd/CLA/u1/S[3] (CLA4_35)                       0.00       2.28 r
+  step1/myadd/CLA/sum[7] (CLA_12bit_0)                    0.00       2.28 r
+  step1/myadd/sum[7] (eight_bit_adder_subractor_0)        0.00       2.28 r
+  step1/U6/Y (AO22X1_RVT)                                 0.03       2.31 r
+  step1/next_acc[6] (booth_substep_0)                     0.00       2.31 r
+  step2/acc[6] (booth_substep_11)                         0.00       2.31 r
+  step2/myadd/i0[6] (eight_bit_adder_subractor_11)        0.00       2.31 r
+  step2/myadd/CLA/a[6] (CLA_12bit_11)                     0.00       2.31 r
+  step2/myadd/CLA/u1/A[2] (CLA4_32)                       0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/X (GPFullAdder_126)              0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/U1/Y (XOR2X1_RVT)                0.04       2.35 f
+  step2/myadd/CLA/u1/FA2/P (GPFullAdder_126)              0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/P[2] (CLALogic_4_32)      0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/U3/Y (AO21X1_RVT)         0.02       2.37 f
+  step2/myadd/CLA/u1/CarryLogic/U2/Y (AO21X1_RVT)         0.02       2.39 f
+  step2/myadd/CLA/u1/CarryLogic/GG (CLALogic_4_32)        0.00       2.39 f
+  step2/myadd/CLA/u1/GG (CLA4_32)                         0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/G[1] (CLALogic_3_11)       0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.02       2.41 f
+  step2/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_11)       0.00       2.41 f
+  step2/myadd/CLA/u2/Ci (CLA4_31)                         0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/Cin (GPFullAdder_124)            0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.45 r
+  step2/myadd/CLA/u2/FA0/Sum (GPFullAdder_124)            0.00       2.45 r
+  step2/myadd/CLA/u2/S[0] (CLA4_31)                       0.00       2.45 r
+  step2/myadd/CLA/sum[8] (CLA_12bit_11)                   0.00       2.45 r
+  step2/myadd/sum[8] (eight_bit_adder_subractor_11)       0.00       2.45 r
+  step2/U5/Y (AO22X1_RVT)                                 0.03       2.48 r
+  step2/next_acc[7] (booth_substep_11)                    0.00       2.48 r
+  step3/acc[7] (booth_substep_10)                         0.00       2.48 r
+  step3/myadd/i0[7] (eight_bit_adder_subractor_10)        0.00       2.48 r
+  step3/myadd/CLA/a[7] (CLA_12bit_10)                     0.00       2.48 r
+  step3/myadd/CLA/u1/A[3] (CLA4_29)                       0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/X (GPFullAdder_113)              0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/U2/Y (XOR2X1_RVT)                0.04       2.52 f
+  step3/myadd/CLA/u1/FA3/P (GPFullAdder_113)              0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_29)      0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.55 f
+  step3/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_29)        0.00       2.55 f
+  step3/myadd/CLA/u1/PP (CLA4_29)                         0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_10)       0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.58 f
+  step3/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_10)       0.00       2.58 f
+  step3/myadd/CLA/u2/Ci (CLA4_28)                         0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/Cin (GPFullAdder_112)            0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.61 r
+  step3/myadd/CLA/u2/FA0/Sum (GPFullAdder_112)            0.00       2.61 r
+  step3/myadd/CLA/u2/S[0] (CLA4_28)                       0.00       2.61 r
+  step3/myadd/CLA/sum[8] (CLA_12bit_10)                   0.00       2.61 r
+  step3/myadd/sum[8] (eight_bit_adder_subractor_10)       0.00       2.61 r
+  step3/U5/Y (AO22X1_RVT)                                 0.03       2.64 r
+  step3/next_acc[7] (booth_substep_10)                    0.00       2.64 r
+  step4/acc[7] (booth_substep_9)                          0.00       2.64 r
+  step4/myadd/i0[7] (eight_bit_adder_subractor_9)         0.00       2.64 r
+  step4/myadd/CLA/a[7] (CLA_12bit_9)                      0.00       2.64 r
+  step4/myadd/CLA/u1/A[3] (CLA4_26)                       0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/X (GPFullAdder_101)              0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.04       2.68 f
+  step4/myadd/CLA/u1/FA3/P (GPFullAdder_101)              0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_26)      0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.71 f
+  step4/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_26)        0.00       2.71 f
+  step4/myadd/CLA/u1/PP (CLA4_26)                         0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_9)        0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.74 f
+  step4/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_9)        0.00       2.74 f
+  step4/myadd/CLA/u2/Ci (CLA4_25)                         0.00       2.74 f
+  step4/myadd/CLA/u2/CarryLogic/Ci (CLALogic_4_25)        0.00       2.74 f
+  step4/myadd/CLA/u2/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.76 f
+  step4/myadd/CLA/u2/CarryLogic/C[1] (CLALogic_4_25)      0.00       2.76 f
+  step4/myadd/CLA/u2/FA1/Cin (GPFullAdder_99)             0.00       2.76 f
+  step4/myadd/CLA/u2/FA1/U2/Y (XOR2X1_RVT)                0.03       2.80 r
+  step4/myadd/CLA/u2/FA1/Sum (GPFullAdder_99)             0.00       2.80 r
+  step4/myadd/CLA/u2/S[1] (CLA4_25)                       0.00       2.80 r
+  step4/myadd/CLA/sum[9] (CLA_12bit_9)                    0.00       2.80 r
+  step4/myadd/sum[9] (eight_bit_adder_subractor_9)        0.00       2.80 r
+  step4/U4/Y (AO22X1_RVT)                                 0.03       2.82 r
+  step4/next_acc[8] (booth_substep_9)                     0.00       2.82 r
+  acc1_reg[4][8]/D (DFFARX1_RVT)                          0.00       2.82 r
+  data arrival time                                                  2.82
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][8]/CLK (DFFARX1_RVT)                        0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.82
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.66
+
+
+  Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][7]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  CLA4_35            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_32            ForQA                 saed32rvt_ff1p16vn40c
+  CLALogic_4_32      ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_29            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_26            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_9        8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/Ci (CLALogic_4_35)        0.00       2.17 f
+  step1/myadd/CLA/u1/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.20 f
+  step1/myadd/CLA/u1/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.22 f
+  step1/myadd/CLA/u1/CarryLogic/U6/Y (AO21X1_RVT)         0.02       2.24 f
+  step1/myadd/CLA/u1/CarryLogic/C[3] (CLALogic_4_35)      0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/Cin (GPFullAdder_137)            0.00       2.24 f
+  step1/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.03       2.28 r
+  step1/myadd/CLA/u1/FA3/Sum (GPFullAdder_137)            0.00       2.28 r
+  step1/myadd/CLA/u1/S[3] (CLA4_35)                       0.00       2.28 r
+  step1/myadd/CLA/sum[7] (CLA_12bit_0)                    0.00       2.28 r
+  step1/myadd/sum[7] (eight_bit_adder_subractor_0)        0.00       2.28 r
+  step1/U6/Y (AO22X1_RVT)                                 0.03       2.31 r
+  step1/next_acc[6] (booth_substep_0)                     0.00       2.31 r
+  step2/acc[6] (booth_substep_11)                         0.00       2.31 r
+  step2/myadd/i0[6] (eight_bit_adder_subractor_11)        0.00       2.31 r
+  step2/myadd/CLA/a[6] (CLA_12bit_11)                     0.00       2.31 r
+  step2/myadd/CLA/u1/A[2] (CLA4_32)                       0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/X (GPFullAdder_126)              0.00       2.31 r
+  step2/myadd/CLA/u1/FA2/U1/Y (XOR2X1_RVT)                0.04       2.35 f
+  step2/myadd/CLA/u1/FA2/P (GPFullAdder_126)              0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/P[2] (CLALogic_4_32)      0.00       2.35 f
+  step2/myadd/CLA/u1/CarryLogic/U3/Y (AO21X1_RVT)         0.02       2.37 f
+  step2/myadd/CLA/u1/CarryLogic/U2/Y (AO21X1_RVT)         0.02       2.39 f
+  step2/myadd/CLA/u1/CarryLogic/GG (CLALogic_4_32)        0.00       2.39 f
+  step2/myadd/CLA/u1/GG (CLA4_32)                         0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/G[1] (CLALogic_3_11)       0.00       2.39 f
+  step2/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.02       2.41 f
+  step2/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_11)       0.00       2.41 f
+  step2/myadd/CLA/u2/Ci (CLA4_31)                         0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/Cin (GPFullAdder_124)            0.00       2.41 f
+  step2/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.45 r
+  step2/myadd/CLA/u2/FA0/Sum (GPFullAdder_124)            0.00       2.45 r
+  step2/myadd/CLA/u2/S[0] (CLA4_31)                       0.00       2.45 r
+  step2/myadd/CLA/sum[8] (CLA_12bit_11)                   0.00       2.45 r
+  step2/myadd/sum[8] (eight_bit_adder_subractor_11)       0.00       2.45 r
+  step2/U5/Y (AO22X1_RVT)                                 0.03       2.48 r
+  step2/next_acc[7] (booth_substep_11)                    0.00       2.48 r
+  step3/acc[7] (booth_substep_10)                         0.00       2.48 r
+  step3/myadd/i0[7] (eight_bit_adder_subractor_10)        0.00       2.48 r
+  step3/myadd/CLA/a[7] (CLA_12bit_10)                     0.00       2.48 r
+  step3/myadd/CLA/u1/A[3] (CLA4_29)                       0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/X (GPFullAdder_113)              0.00       2.48 r
+  step3/myadd/CLA/u1/FA3/U2/Y (XOR2X1_RVT)                0.04       2.52 f
+  step3/myadd/CLA/u1/FA3/P (GPFullAdder_113)              0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_29)      0.00       2.52 f
+  step3/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.55 f
+  step3/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_29)        0.00       2.55 f
+  step3/myadd/CLA/u1/PP (CLA4_29)                         0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_10)       0.00       2.55 f
+  step3/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.58 f
+  step3/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_10)       0.00       2.58 f
+  step3/myadd/CLA/u2/Ci (CLA4_28)                         0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/Cin (GPFullAdder_112)            0.00       2.58 f
+  step3/myadd/CLA/u2/FA0/U1/Y (XOR2X1_RVT)                0.03       2.61 r
+  step3/myadd/CLA/u2/FA0/Sum (GPFullAdder_112)            0.00       2.61 r
+  step3/myadd/CLA/u2/S[0] (CLA4_28)                       0.00       2.61 r
+  step3/myadd/CLA/sum[8] (CLA_12bit_10)                   0.00       2.61 r
+  step3/myadd/sum[8] (eight_bit_adder_subractor_10)       0.00       2.61 r
+  step3/U5/Y (AO22X1_RVT)                                 0.03       2.64 r
+  step3/next_acc[7] (booth_substep_10)                    0.00       2.64 r
+  step4/acc[7] (booth_substep_9)                          0.00       2.64 r
+  step4/myadd/i0[7] (eight_bit_adder_subractor_9)         0.00       2.64 r
+  step4/myadd/CLA/a[7] (CLA_12bit_9)                      0.00       2.64 r
+  step4/myadd/CLA/u1/A[3] (CLA4_26)                       0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/X (GPFullAdder_101)              0.00       2.64 r
+  step4/myadd/CLA/u1/FA3/U1/Y (XOR2X1_RVT)                0.04       2.68 f
+  step4/myadd/CLA/u1/FA3/P (GPFullAdder_101)              0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/P[3] (CLALogic_4_26)      0.00       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.71 f
+  step4/myadd/CLA/u1/CarryLogic/PP (CLALogic_4_26)        0.00       2.71 f
+  step4/myadd/CLA/u1/PP (CLA4_26)                         0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/P[1] (CLALogic_3_9)        0.00       2.71 f
+  step4/myadd/CLA/CarryLogic_2/U5/Y (AO21X1_RVT)          0.03       2.74 f
+  step4/myadd/CLA/CarryLogic_2/C[2] (CLALogic_3_9)        0.00       2.74 f
+  step4/myadd/CLA/u2/Ci (CLA4_25)                         0.00       2.74 f
+  step4/myadd/CLA/u2/FA0/Cin (GPFullAdder_100)            0.00       2.74 f
+  step4/myadd/CLA/u2/FA0/U2/Y (XOR2X1_RVT)                0.03       2.77 r
+  step4/myadd/CLA/u2/FA0/Sum (GPFullAdder_100)            0.00       2.77 r
+  step4/myadd/CLA/u2/S[0] (CLA4_25)                       0.00       2.77 r
+  step4/myadd/CLA/sum[8] (CLA_12bit_9)                    0.00       2.77 r
+  step4/myadd/sum[8] (eight_bit_adder_subractor_9)        0.00       2.77 r
+  step4/U5/Y (AO22X1_RVT)                                 0.03       2.80 r
+  step4/next_acc[7] (booth_substep_9)                     0.00       2.80 r
+  acc1_reg[4][7]/D (DFFARX1_RVT)                          0.00       2.80 r
+  data arrival time                                                  2.80
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][7]/CLK (DFFARX1_RVT)                        0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.69
+
+ 
+  Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][6]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_33            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_30            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_27            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_9        8000                  saed32rvt_ff1p16vn40c
+  CLA4_26            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/Cin (GPFullAdder_140)            0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.21 r
+  step1/myadd/CLA/u1/FA0/Sum (GPFullAdder_140)            0.00       2.21 r
+  step1/myadd/CLA/u1/S[0] (CLA4_35)                       0.00       2.21 r
+  step1/myadd/CLA/sum[4] (CLA_12bit_0)                    0.00       2.21 r
+  step1/myadd/sum[4] (eight_bit_adder_subractor_0)        0.00       2.21 r
+  step1/U9/Y (AO22X1_RVT)                                 0.03       2.24 r
+  step1/next_acc[3] (booth_substep_0)                     0.00       2.24 r
+  step2/acc[3] (booth_substep_11)                         0.00       2.24 r
+  step2/myadd/i0[3] (eight_bit_adder_subractor_11)        0.00       2.24 r
+  step2/myadd/CLA/a[3] (CLA_12bit_11)                     0.00       2.24 r
+  step2/myadd/CLA/u0/A[3] (CLA4_33)                       0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/X (GPFullAdder_129)              0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.28 f
+  step2/myadd/CLA/u0/FA3/P (GPFullAdder_129)              0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_33)      0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.31 f
+  step2/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_33)        0.00       2.31 f
+  step2/myadd/CLA/u0/PP (CLA4_33)                         0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_11)       0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.33 f
+  step2/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_11)       0.00       2.33 f
+  step2/myadd/CLA/u1/Ci (CLA4_32)                         0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/Cin (GPFullAdder_128)            0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.37 r
+  step2/myadd/CLA/u1/FA0/Sum (GPFullAdder_128)            0.00       2.37 r
+  step2/myadd/CLA/u1/S[0] (CLA4_32)                       0.00       2.37 r
+  step2/myadd/CLA/sum[4] (CLA_12bit_11)                   0.00       2.37 r
+  step2/myadd/sum[4] (eight_bit_adder_subractor_11)       0.00       2.37 r
+  step2/U9/Y (AO22X1_RVT)                                 0.03       2.40 r
+  step2/next_acc[3] (booth_substep_11)                    0.00       2.40 r
+  step3/acc[3] (booth_substep_10)                         0.00       2.40 r
+  step3/myadd/i0[3] (eight_bit_adder_subractor_10)        0.00       2.40 r
+  step3/myadd/CLA/a[3] (CLA_12bit_10)                     0.00       2.40 r
+  step3/myadd/CLA/u0/A[3] (CLA4_30)                       0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/X (GPFullAdder_117)              0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.44 f
+  step3/myadd/CLA/u0/FA3/P (GPFullAdder_117)              0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_30)      0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.47 f
+  step3/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_30)        0.00       2.47 f
+  step3/myadd/CLA/u0/PP (CLA4_30)                         0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_10)       0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.50 f
+  step3/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_10)       0.00       2.50 f
+  step3/myadd/CLA/u1/Ci (CLA4_29)                         0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/Cin (GPFullAdder_116)            0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.53 r
+  step3/myadd/CLA/u1/FA0/Sum (GPFullAdder_116)            0.00       2.53 r
+  step3/myadd/CLA/u1/S[0] (CLA4_29)                       0.00       2.53 r
+  step3/myadd/CLA/sum[4] (CLA_12bit_10)                   0.00       2.53 r
+  step3/myadd/sum[4] (eight_bit_adder_subractor_10)       0.00       2.53 r
+  step3/U9/Y (AO22X1_RVT)                                 0.03       2.56 r
+  step3/next_acc[3] (booth_substep_10)                    0.00       2.56 r
+  step4/acc[3] (booth_substep_9)                          0.00       2.56 r
+  step4/myadd/i0[3] (eight_bit_adder_subractor_9)         0.00       2.56 r
+  step4/myadd/CLA/a[3] (CLA_12bit_9)                      0.00       2.56 r
+  step4/myadd/CLA/u0/A[3] (CLA4_27)                       0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/X (GPFullAdder_105)              0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/U1/Y (XOR2X1_RVT)                0.04       2.60 f
+  step4/myadd/CLA/u0/FA3/P (GPFullAdder_105)              0.00       2.60 f
+  step4/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_27)      0.00       2.60 f
+  step4/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.63 f
+  step4/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_27)        0.00       2.63 f
+  step4/myadd/CLA/u0/PP (CLA4_27)                         0.00       2.63 f
+  step4/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_9)        0.00       2.63 f
+  step4/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.66 f
+  step4/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_9)        0.00       2.66 f
+  step4/myadd/CLA/u1/Ci (CLA4_26)                         0.00       2.66 f
+  step4/myadd/CLA/u1/CarryLogic/Ci (CLALogic_4_26)        0.00       2.66 f
+  step4/myadd/CLA/u1/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.71 f
+  step4/myadd/CLA/u1/CarryLogic/U6/Y (AO21X1_RVT)         0.02       2.73 f
+  step4/myadd/CLA/u1/CarryLogic/C[3] (CLALogic_4_26)      0.00       2.73 f
+  step4/myadd/CLA/u1/FA3/Cin (GPFullAdder_101)            0.00       2.73 f
+  step4/myadd/CLA/u1/FA3/U2/Y (XOR2X1_RVT)                0.03       2.76 r
+  step4/myadd/CLA/u1/FA3/Sum (GPFullAdder_101)            0.00       2.76 r
+  step4/myadd/CLA/u1/S[3] (CLA4_26)                       0.00       2.76 r
+  step4/myadd/CLA/sum[7] (CLA_12bit_9)                    0.00       2.76 r
+  step4/myadd/sum[7] (eight_bit_adder_subractor_9)        0.00       2.76 r
+  step4/U6/Y (AO22X1_RVT)                                 0.03       2.79 r
+  step4/next_acc[6] (booth_substep_9)                     0.00       2.79 r
+  acc1_reg[4][6]/D (DFFARX1_RVT)                          0.00       2.79 r
+  data arrival time                                                  2.79
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][6]/CLK (DFFARX1_RVT)                        0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.70
+
+
+  Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][5]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_33            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_30            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_27            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_9        8000                  saed32rvt_ff1p16vn40c
+  CLA4_26            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/Cin (GPFullAdder_140)            0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.21 r
+  step1/myadd/CLA/u1/FA0/Sum (GPFullAdder_140)            0.00       2.21 r
+  step1/myadd/CLA/u1/S[0] (CLA4_35)                       0.00       2.21 r
+  step1/myadd/CLA/sum[4] (CLA_12bit_0)                    0.00       2.21 r
+  step1/myadd/sum[4] (eight_bit_adder_subractor_0)        0.00       2.21 r
+  step1/U9/Y (AO22X1_RVT)                                 0.03       2.24 r
+  step1/next_acc[3] (booth_substep_0)                     0.00       2.24 r
+  step2/acc[3] (booth_substep_11)                         0.00       2.24 r
+  step2/myadd/i0[3] (eight_bit_adder_subractor_11)        0.00       2.24 r
+  step2/myadd/CLA/a[3] (CLA_12bit_11)                     0.00       2.24 r
+  step2/myadd/CLA/u0/A[3] (CLA4_33)                       0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/X (GPFullAdder_129)              0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.28 f
+  step2/myadd/CLA/u0/FA3/P (GPFullAdder_129)              0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_33)      0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.31 f
+  step2/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_33)        0.00       2.31 f
+  step2/myadd/CLA/u0/PP (CLA4_33)                         0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_11)       0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.33 f
+  step2/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_11)       0.00       2.33 f
+  step2/myadd/CLA/u1/Ci (CLA4_32)                         0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/Cin (GPFullAdder_128)            0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.37 r
+  step2/myadd/CLA/u1/FA0/Sum (GPFullAdder_128)            0.00       2.37 r
+  step2/myadd/CLA/u1/S[0] (CLA4_32)                       0.00       2.37 r
+  step2/myadd/CLA/sum[4] (CLA_12bit_11)                   0.00       2.37 r
+  step2/myadd/sum[4] (eight_bit_adder_subractor_11)       0.00       2.37 r
+  step2/U9/Y (AO22X1_RVT)                                 0.03       2.40 r
+  step2/next_acc[3] (booth_substep_11)                    0.00       2.40 r
+  step3/acc[3] (booth_substep_10)                         0.00       2.40 r
+  step3/myadd/i0[3] (eight_bit_adder_subractor_10)        0.00       2.40 r
+  step3/myadd/CLA/a[3] (CLA_12bit_10)                     0.00       2.40 r
+  step3/myadd/CLA/u0/A[3] (CLA4_30)                       0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/X (GPFullAdder_117)              0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.44 f
+  step3/myadd/CLA/u0/FA3/P (GPFullAdder_117)              0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_30)      0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.47 f
+  step3/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_30)        0.00       2.47 f
+  step3/myadd/CLA/u0/PP (CLA4_30)                         0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_10)       0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.50 f
+  step3/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_10)       0.00       2.50 f
+  step3/myadd/CLA/u1/Ci (CLA4_29)                         0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/Cin (GPFullAdder_116)            0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.53 r
+  step3/myadd/CLA/u1/FA0/Sum (GPFullAdder_116)            0.00       2.53 r
+  step3/myadd/CLA/u1/S[0] (CLA4_29)                       0.00       2.53 r
+  step3/myadd/CLA/sum[4] (CLA_12bit_10)                   0.00       2.53 r
+  step3/myadd/sum[4] (eight_bit_adder_subractor_10)       0.00       2.53 r
+  step3/U9/Y (AO22X1_RVT)                                 0.03       2.56 r
+  step3/next_acc[3] (booth_substep_10)                    0.00       2.56 r
+  step4/acc[3] (booth_substep_9)                          0.00       2.56 r
+  step4/myadd/i0[3] (eight_bit_adder_subractor_9)         0.00       2.56 r
+  step4/myadd/CLA/a[3] (CLA_12bit_9)                      0.00       2.56 r
+  step4/myadd/CLA/u0/A[3] (CLA4_27)                       0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/X (GPFullAdder_105)              0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/U1/Y (XOR2X1_RVT)                0.04       2.60 f
+  step4/myadd/CLA/u0/FA3/P (GPFullAdder_105)              0.00       2.60 f
+  step4/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_27)      0.00       2.60 f
+  step4/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.63 f
+  step4/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_27)        0.00       2.63 f
+  step4/myadd/CLA/u0/PP (CLA4_27)                         0.00       2.63 f
+  step4/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_9)        0.00       2.63 f
+  step4/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.66 f
+  step4/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_9)        0.00       2.66 f
+  step4/myadd/CLA/u1/Ci (CLA4_26)                         0.00       2.66 f
+  step4/myadd/CLA/u1/CarryLogic/Ci (CLALogic_4_26)        0.00       2.66 f
+  step4/myadd/CLA/u1/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/U7/Y (AO21X1_RVT)         0.02       2.71 f
+  step4/myadd/CLA/u1/CarryLogic/C[2] (CLALogic_4_26)      0.00       2.71 f
+  step4/myadd/CLA/u1/FA2/Cin (GPFullAdder_102)            0.00       2.71 f
+  step4/myadd/CLA/u1/FA2/U2/Y (XOR2X1_RVT)                0.03       2.74 r
+  step4/myadd/CLA/u1/FA2/Sum (GPFullAdder_102)            0.00       2.74 r
+  step4/myadd/CLA/u1/S[2] (CLA4_26)                       0.00       2.74 r
+  step4/myadd/CLA/sum[6] (CLA_12bit_9)                    0.00       2.74 r
+  step4/myadd/sum[6] (eight_bit_adder_subractor_9)        0.00       2.74 r
+  step4/U7/Y (AO22X1_RVT)                                 0.03       2.77 r
+  step4/next_acc[5] (booth_substep_9)                     0.00       2.77 r
+  acc1_reg[4][5]/D (DFFARX1_RVT)                          0.00       2.77 r
+  data arrival time                                                  2.77
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][5]/CLK (DFFARX1_RVT)                        0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.72
+
+
+  Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][4]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_33            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_30            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_27            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_9        8000                  saed32rvt_ff1p16vn40c
+  CLA4_26            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/Cin (GPFullAdder_140)            0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.21 r
+  step1/myadd/CLA/u1/FA0/Sum (GPFullAdder_140)            0.00       2.21 r
+  step1/myadd/CLA/u1/S[0] (CLA4_35)                       0.00       2.21 r
+  step1/myadd/CLA/sum[4] (CLA_12bit_0)                    0.00       2.21 r
+  step1/myadd/sum[4] (eight_bit_adder_subractor_0)        0.00       2.21 r
+  step1/U9/Y (AO22X1_RVT)                                 0.03       2.24 r
+  step1/next_acc[3] (booth_substep_0)                     0.00       2.24 r
+  step2/acc[3] (booth_substep_11)                         0.00       2.24 r
+  step2/myadd/i0[3] (eight_bit_adder_subractor_11)        0.00       2.24 r
+  step2/myadd/CLA/a[3] (CLA_12bit_11)                     0.00       2.24 r
+  step2/myadd/CLA/u0/A[3] (CLA4_33)                       0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/X (GPFullAdder_129)              0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.28 f
+  step2/myadd/CLA/u0/FA3/P (GPFullAdder_129)              0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_33)      0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.31 f
+  step2/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_33)        0.00       2.31 f
+  step2/myadd/CLA/u0/PP (CLA4_33)                         0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_11)       0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.33 f
+  step2/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_11)       0.00       2.33 f
+  step2/myadd/CLA/u1/Ci (CLA4_32)                         0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/Cin (GPFullAdder_128)            0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.37 r
+  step2/myadd/CLA/u1/FA0/Sum (GPFullAdder_128)            0.00       2.37 r
+  step2/myadd/CLA/u1/S[0] (CLA4_32)                       0.00       2.37 r
+  step2/myadd/CLA/sum[4] (CLA_12bit_11)                   0.00       2.37 r
+  step2/myadd/sum[4] (eight_bit_adder_subractor_11)       0.00       2.37 r
+  step2/U9/Y (AO22X1_RVT)                                 0.03       2.40 r
+  step2/next_acc[3] (booth_substep_11)                    0.00       2.40 r
+  step3/acc[3] (booth_substep_10)                         0.00       2.40 r
+  step3/myadd/i0[3] (eight_bit_adder_subractor_10)        0.00       2.40 r
+  step3/myadd/CLA/a[3] (CLA_12bit_10)                     0.00       2.40 r
+  step3/myadd/CLA/u0/A[3] (CLA4_30)                       0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/X (GPFullAdder_117)              0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.44 f
+  step3/myadd/CLA/u0/FA3/P (GPFullAdder_117)              0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_30)      0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.47 f
+  step3/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_30)        0.00       2.47 f
+  step3/myadd/CLA/u0/PP (CLA4_30)                         0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_10)       0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.50 f
+  step3/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_10)       0.00       2.50 f
+  step3/myadd/CLA/u1/Ci (CLA4_29)                         0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/Cin (GPFullAdder_116)            0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.53 r
+  step3/myadd/CLA/u1/FA0/Sum (GPFullAdder_116)            0.00       2.53 r
+  step3/myadd/CLA/u1/S[0] (CLA4_29)                       0.00       2.53 r
+  step3/myadd/CLA/sum[4] (CLA_12bit_10)                   0.00       2.53 r
+  step3/myadd/sum[4] (eight_bit_adder_subractor_10)       0.00       2.53 r
+  step3/U9/Y (AO22X1_RVT)                                 0.03       2.56 r
+  step3/next_acc[3] (booth_substep_10)                    0.00       2.56 r
+  step4/acc[3] (booth_substep_9)                          0.00       2.56 r
+  step4/myadd/i0[3] (eight_bit_adder_subractor_9)         0.00       2.56 r
+  step4/myadd/CLA/a[3] (CLA_12bit_9)                      0.00       2.56 r
+  step4/myadd/CLA/u0/A[3] (CLA4_27)                       0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/X (GPFullAdder_105)              0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/U1/Y (XOR2X1_RVT)                0.04       2.60 f
+  step4/myadd/CLA/u0/FA3/P (GPFullAdder_105)              0.00       2.60 f
+  step4/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_27)      0.00       2.60 f
+  step4/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.63 f
+  step4/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_27)        0.00       2.63 f
+  step4/myadd/CLA/u0/PP (CLA4_27)                         0.00       2.63 f
+  step4/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_9)        0.00       2.63 f
+  step4/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.66 f
+  step4/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_9)        0.00       2.66 f
+  step4/myadd/CLA/u1/Ci (CLA4_26)                         0.00       2.66 f
+  step4/myadd/CLA/u1/CarryLogic/Ci (CLALogic_4_26)        0.00       2.66 f
+  step4/myadd/CLA/u1/CarryLogic/U8/Y (AO21X1_RVT)         0.02       2.68 f
+  step4/myadd/CLA/u1/CarryLogic/C[1] (CLALogic_4_26)      0.00       2.68 f
+  step4/myadd/CLA/u1/FA1/Cin (GPFullAdder_103)            0.00       2.68 f
+  step4/myadd/CLA/u1/FA1/U2/Y (XOR2X1_RVT)                0.03       2.72 r
+  step4/myadd/CLA/u1/FA1/Sum (GPFullAdder_103)            0.00       2.72 r
+  step4/myadd/CLA/u1/S[1] (CLA4_26)                       0.00       2.72 r
+  step4/myadd/CLA/sum[5] (CLA_12bit_9)                    0.00       2.72 r
+  step4/myadd/sum[5] (eight_bit_adder_subractor_9)        0.00       2.72 r
+  step4/U8/Y (AO22X1_RVT)                                 0.03       2.74 r
+  step4/next_acc[4] (booth_substep_9)                     0.00       2.74 r
+  acc1_reg[4][4]/D (DFFARX1_RVT)                          0.00       2.74 r
+  data arrival time                                                  2.74
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][4]/CLK (DFFARX1_RVT)                        0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][3]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_33            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_30            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_27            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_9        8000                  saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/Cin (GPFullAdder_140)            0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.21 r
+  step1/myadd/CLA/u1/FA0/Sum (GPFullAdder_140)            0.00       2.21 r
+  step1/myadd/CLA/u1/S[0] (CLA4_35)                       0.00       2.21 r
+  step1/myadd/CLA/sum[4] (CLA_12bit_0)                    0.00       2.21 r
+  step1/myadd/sum[4] (eight_bit_adder_subractor_0)        0.00       2.21 r
+  step1/U9/Y (AO22X1_RVT)                                 0.03       2.24 r
+  step1/next_acc[3] (booth_substep_0)                     0.00       2.24 r
+  step2/acc[3] (booth_substep_11)                         0.00       2.24 r
+  step2/myadd/i0[3] (eight_bit_adder_subractor_11)        0.00       2.24 r
+  step2/myadd/CLA/a[3] (CLA_12bit_11)                     0.00       2.24 r
+  step2/myadd/CLA/u0/A[3] (CLA4_33)                       0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/X (GPFullAdder_129)              0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.28 f
+  step2/myadd/CLA/u0/FA3/P (GPFullAdder_129)              0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_33)      0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.31 f
+  step2/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_33)        0.00       2.31 f
+  step2/myadd/CLA/u0/PP (CLA4_33)                         0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_11)       0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.33 f
+  step2/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_11)       0.00       2.33 f
+  step2/myadd/CLA/u1/Ci (CLA4_32)                         0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/Cin (GPFullAdder_128)            0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.37 r
+  step2/myadd/CLA/u1/FA0/Sum (GPFullAdder_128)            0.00       2.37 r
+  step2/myadd/CLA/u1/S[0] (CLA4_32)                       0.00       2.37 r
+  step2/myadd/CLA/sum[4] (CLA_12bit_11)                   0.00       2.37 r
+  step2/myadd/sum[4] (eight_bit_adder_subractor_11)       0.00       2.37 r
+  step2/U9/Y (AO22X1_RVT)                                 0.03       2.40 r
+  step2/next_acc[3] (booth_substep_11)                    0.00       2.40 r
+  step3/acc[3] (booth_substep_10)                         0.00       2.40 r
+  step3/myadd/i0[3] (eight_bit_adder_subractor_10)        0.00       2.40 r
+  step3/myadd/CLA/a[3] (CLA_12bit_10)                     0.00       2.40 r
+  step3/myadd/CLA/u0/A[3] (CLA4_30)                       0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/X (GPFullAdder_117)              0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.44 f
+  step3/myadd/CLA/u0/FA3/P (GPFullAdder_117)              0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_30)      0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.47 f
+  step3/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_30)        0.00       2.47 f
+  step3/myadd/CLA/u0/PP (CLA4_30)                         0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_10)       0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.50 f
+  step3/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_10)       0.00       2.50 f
+  step3/myadd/CLA/u1/Ci (CLA4_29)                         0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/Cin (GPFullAdder_116)            0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.53 r
+  step3/myadd/CLA/u1/FA0/Sum (GPFullAdder_116)            0.00       2.53 r
+  step3/myadd/CLA/u1/S[0] (CLA4_29)                       0.00       2.53 r
+  step3/myadd/CLA/sum[4] (CLA_12bit_10)                   0.00       2.53 r
+  step3/myadd/sum[4] (eight_bit_adder_subractor_10)       0.00       2.53 r
+  step3/U9/Y (AO22X1_RVT)                                 0.03       2.56 r
+  step3/next_acc[3] (booth_substep_10)                    0.00       2.56 r
+  step4/acc[3] (booth_substep_9)                          0.00       2.56 r
+  step4/myadd/i0[3] (eight_bit_adder_subractor_9)         0.00       2.56 r
+  step4/myadd/CLA/a[3] (CLA_12bit_9)                      0.00       2.56 r
+  step4/myadd/CLA/u0/A[3] (CLA4_27)                       0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/X (GPFullAdder_105)              0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/U1/Y (XOR2X1_RVT)                0.04       2.60 f
+  step4/myadd/CLA/u0/FA3/P (GPFullAdder_105)              0.00       2.60 f
+  step4/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_27)      0.00       2.60 f
+  step4/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.63 f
+  step4/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_27)        0.00       2.63 f
+  step4/myadd/CLA/u0/PP (CLA4_27)                         0.00       2.63 f
+  step4/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_9)        0.00       2.63 f
+  step4/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.66 f
+  step4/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_9)        0.00       2.66 f
+  step4/myadd/CLA/u1/Ci (CLA4_26)                         0.00       2.66 f
+  step4/myadd/CLA/u1/FA0/Cin (GPFullAdder_104)            0.00       2.66 f
+  step4/myadd/CLA/u1/FA0/U2/Y (XOR2X1_RVT)                0.03       2.69 r
+  step4/myadd/CLA/u1/FA0/Sum (GPFullAdder_104)            0.00       2.69 r
+  step4/myadd/CLA/u1/S[0] (CLA4_26)                       0.00       2.69 r
+  step4/myadd/CLA/sum[4] (CLA_12bit_9)                    0.00       2.69 r
+  step4/myadd/sum[4] (eight_bit_adder_subractor_9)        0.00       2.69 r
+  step4/U9/Y (AO22X1_RVT)                                 0.03       2.72 r
+  step4/next_acc[3] (booth_substep_9)                     0.00       2.72 r
+  acc1_reg[4][3]/D (DFFARX1_RVT)                          0.00       2.72 r
+  data arrival time                                                  2.72
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][3]/CLK (DFFARX1_RVT)                        0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: multiplier[0]
+              (input port clocked by MAIN_CLOCK)
+  Endpoint: acc1_reg[4][2]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  booth_multiplier   8000                  saed32rvt_ff1p16vn40c
+  eight_bit_adder_subractor_0
+                     8000                  saed32rvt_ff1p16vn40c
+  CLA4_0             ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_0        8000                  saed32rvt_ff1p16vn40c
+  booth_substep_0    8000                  saed32rvt_ff1p16vn40c
+  CLA4_33            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_11       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_11   8000                  saed32rvt_ff1p16vn40c
+  CLA4_30            ForQA                 saed32rvt_ff1p16vn40c
+  CLA_12bit_10       8000                  saed32rvt_ff1p16vn40c
+  booth_substep_10   8000                  saed32rvt_ff1p16vn40c
+  CLA4_27            ForQA                 saed32rvt_ff1p16vn40c
+  booth_substep_9    8000                  saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  multiplier[0] (in)                                      0.01       2.01 r
+  step1/Q[0] (booth_substep_0)                            0.00       2.01 r
+  step1/myadd/cin (eight_bit_adder_subractor_0)           0.00       2.01 r
+  step1/myadd/U1/Y (NBUFFX2_RVT)                          0.02       2.03 r
+  step1/myadd/x1/i1 (xor2_143)                            0.00       2.03 r
+  step1/myadd/x1/U1/Y (XOR2X1_RVT)                        0.04       2.07 f
+  step1/myadd/x1/o (xor2_143)                             0.00       2.07 f
+  step1/myadd/CLA/b[1] (CLA_12bit_0)                      0.00       2.07 f
+  step1/myadd/CLA/u0/B[1] (CLA4_0)                        0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/Y (GPFullAdder_143)              0.00       2.07 f
+  step1/myadd/CLA/u0/FA1/U1/Y (XOR2X1_RVT)                0.04       2.11 f
+  step1/myadd/CLA/u0/FA1/P (GPFullAdder_143)              0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/P[1] (CLALogic_4_0)       0.00       2.11 f
+  step1/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.04       2.14 f
+  step1/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_0)         0.00       2.14 f
+  step1/myadd/CLA/u0/PP (CLA4_0)                          0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_0)        0.00       2.14 f
+  step1/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.17 f
+  step1/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_0)        0.00       2.17 f
+  step1/myadd/CLA/u1/Ci (CLA4_35)                         0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/Cin (GPFullAdder_140)            0.00       2.17 f
+  step1/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.21 r
+  step1/myadd/CLA/u1/FA0/Sum (GPFullAdder_140)            0.00       2.21 r
+  step1/myadd/CLA/u1/S[0] (CLA4_35)                       0.00       2.21 r
+  step1/myadd/CLA/sum[4] (CLA_12bit_0)                    0.00       2.21 r
+  step1/myadd/sum[4] (eight_bit_adder_subractor_0)        0.00       2.21 r
+  step1/U9/Y (AO22X1_RVT)                                 0.03       2.24 r
+  step1/next_acc[3] (booth_substep_0)                     0.00       2.24 r
+  step2/acc[3] (booth_substep_11)                         0.00       2.24 r
+  step2/myadd/i0[3] (eight_bit_adder_subractor_11)        0.00       2.24 r
+  step2/myadd/CLA/a[3] (CLA_12bit_11)                     0.00       2.24 r
+  step2/myadd/CLA/u0/A[3] (CLA4_33)                       0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/X (GPFullAdder_129)              0.00       2.24 r
+  step2/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.28 f
+  step2/myadd/CLA/u0/FA3/P (GPFullAdder_129)              0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_33)      0.00       2.28 f
+  step2/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.31 f
+  step2/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_33)        0.00       2.31 f
+  step2/myadd/CLA/u0/PP (CLA4_33)                         0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_11)       0.00       2.31 f
+  step2/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.33 f
+  step2/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_11)       0.00       2.33 f
+  step2/myadd/CLA/u1/Ci (CLA4_32)                         0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/Cin (GPFullAdder_128)            0.00       2.33 f
+  step2/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.37 r
+  step2/myadd/CLA/u1/FA0/Sum (GPFullAdder_128)            0.00       2.37 r
+  step2/myadd/CLA/u1/S[0] (CLA4_32)                       0.00       2.37 r
+  step2/myadd/CLA/sum[4] (CLA_12bit_11)                   0.00       2.37 r
+  step2/myadd/sum[4] (eight_bit_adder_subractor_11)       0.00       2.37 r
+  step2/U9/Y (AO22X1_RVT)                                 0.03       2.40 r
+  step2/next_acc[3] (booth_substep_11)                    0.00       2.40 r
+  step3/acc[3] (booth_substep_10)                         0.00       2.40 r
+  step3/myadd/i0[3] (eight_bit_adder_subractor_10)        0.00       2.40 r
+  step3/myadd/CLA/a[3] (CLA_12bit_10)                     0.00       2.40 r
+  step3/myadd/CLA/u0/A[3] (CLA4_30)                       0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/X (GPFullAdder_117)              0.00       2.40 r
+  step3/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.44 f
+  step3/myadd/CLA/u0/FA3/P (GPFullAdder_117)              0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/P[3] (CLALogic_4_30)      0.00       2.44 f
+  step3/myadd/CLA/u0/CarryLogic/U5/Y (AND4X1_RVT)         0.03       2.47 f
+  step3/myadd/CLA/u0/CarryLogic/PP (CLALogic_4_30)        0.00       2.47 f
+  step3/myadd/CLA/u0/PP (CLA4_30)                         0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/P[0] (CLALogic_3_10)       0.00       2.47 f
+  step3/myadd/CLA/CarryLogic_2/U6/Y (AO21X1_RVT)          0.03       2.50 f
+  step3/myadd/CLA/CarryLogic_2/C[1] (CLALogic_3_10)       0.00       2.50 f
+  step3/myadd/CLA/u1/Ci (CLA4_29)                         0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/Cin (GPFullAdder_116)            0.00       2.50 f
+  step3/myadd/CLA/u1/FA0/U1/Y (XOR2X1_RVT)                0.03       2.53 r
+  step3/myadd/CLA/u1/FA0/Sum (GPFullAdder_116)            0.00       2.53 r
+  step3/myadd/CLA/u1/S[0] (CLA4_29)                       0.00       2.53 r
+  step3/myadd/CLA/sum[4] (CLA_12bit_10)                   0.00       2.53 r
+  step3/myadd/sum[4] (eight_bit_adder_subractor_10)       0.00       2.53 r
+  step3/U9/Y (AO22X1_RVT)                                 0.03       2.56 r
+  step3/next_acc[3] (booth_substep_10)                    0.00       2.56 r
+  step4/acc[3] (booth_substep_9)                          0.00       2.56 r
+  step4/myadd/i0[3] (eight_bit_adder_subractor_9)         0.00       2.56 r
+  step4/myadd/CLA/a[3] (CLA_12bit_9)                      0.00       2.56 r
+  step4/myadd/CLA/u0/A[3] (CLA4_27)                       0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/X (GPFullAdder_105)              0.00       2.56 r
+  step4/myadd/CLA/u0/FA3/U1/Y (XOR2X1_RVT)                0.04       2.60 f
+  step4/myadd/CLA/u0/FA3/U2/Y (XOR2X1_RVT)                0.04       2.64 r
+  step4/myadd/CLA/u0/FA3/Sum (GPFullAdder_105)            0.00       2.64 r
+  step4/myadd/CLA/u0/S[3] (CLA4_27)                       0.00       2.64 r
+  step4/myadd/CLA/sum[3] (CLA_12bit_9)                    0.00       2.64 r
+  step4/myadd/sum[3] (eight_bit_adder_subractor_9)        0.00       2.64 r
+  step4/U10/Y (AO22X1_RVT)                                0.03       2.66 r
+  step4/next_acc[2] (booth_substep_9)                     0.00       2.66 r
+  acc1_reg[4][2]/D (DFFARX1_RVT)                          0.00       2.66 r
+  data arrival time                                                  2.66
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  acc1_reg[4][2]/CLK (DFFARX1_RVT)                        0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.66
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.82
+
+
+1
+

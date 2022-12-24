@@ -1,0 +1,30 @@
+Global Operating Voltage = 1.16
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 430.1226 uW   (78%)
+  Net Switching Power  = 124.7201 uW   (22%)
+                         ---------
+Total Dynamic Power    = 554.8427 uW  (100%)
+
+Cell Leakage Power     = 158.6125 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          36.2379            0.3168        4.7880e+06           41.3427  (   5.79%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    393.8847          124.4033        1.5382e+08          672.1125  (  94.21%)
+--------------------------------------------------------------------------------------------------
+Total            430.1227 uW       124.7201 uW     1.5861e+08 pW       713.4553 uW
+1

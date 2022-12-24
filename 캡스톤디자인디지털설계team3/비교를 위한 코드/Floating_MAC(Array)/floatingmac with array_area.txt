@@ -1,0 +1,30 @@
+****************************************
+Report : area
+Design : TOP
+Version: O-2018.06-SP4
+Date   : Fri Dec 23 15:13:53 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /data/SYNOPSYS/lib/32nm/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ff1p16vn40c.db)
+
+Number of ports:                         1549
+Number of nets:                          4326
+Number of cells:                         2644
+Number of combinational cells:           2371
+Number of sequential cells:               217
+Number of macros/black boxes:               0
+Number of buf/inv:                        320
+Number of references:                       1
+
+Combinational area:               6601.136296
+Buf/Inv area:                      411.204994
+Noncombinational area:            1445.571109
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1587.471698
+
+Total cell area:                  8046.707405
+Total area:                       9634.179103
+1

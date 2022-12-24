@@ -1,0 +1,71 @@
+****************************************
+Report : power
+        -analysis_effort medium
+Design : CLA_12bit
+Version: O-2018.06-SP4
+Date   : Wed Dec 21 14:11:47 2022
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /data/SYNOPSYS/lib/32nm/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ff1p16vn40c.db)
+
+
+Operating Conditions: ff1p16vn40c   Library: saed32rvt_ff1p16vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CLA_12bit              8000              saed32rvt_ff1p16vn40c
+CLALogic_3             ForQA             saed32rvt_ff1p16vn40c
+CLA4_0                 ForQA             saed32rvt_ff1p16vn40c
+CLALogic_4_0           ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_0          ForQA             saed32rvt_ff1p16vn40c
+CLA4_1                 ForQA             saed32rvt_ff1p16vn40c
+CLA4_2                 ForQA             saed32rvt_ff1p16vn40c
+CLALogic_4_1           ForQA             saed32rvt_ff1p16vn40c
+CLALogic_4_2           ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_1          ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_2          ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_3          ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_4          ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_5          ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_6          ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_7          ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_8          ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_9          ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_10         ForQA             saed32rvt_ff1p16vn40c
+GPFullAdder_11         ForQA             saed32rvt_ff1p16vn40c
+
+
+Global Operating Voltage = 1.16
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  41.1631 uW   (94%)
+  Net Switching Power  =   2.4907 uW    (6%)
+                         ---------
+Total Dynamic Power    =  43.6538 uW  (100%)
+
+Cell Leakage Power     =   8.1528 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register          35.1361            0.5163        3.5206e+06           39.1730  (  75.61%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      6.0270            1.9744        4.6322e+06           12.6336  (  24.39%)
+--------------------------------------------------------------------------------------------------
+Total             41.1631 uW         2.4907 uW     8.1528e+06 pW        51.8066 uW
+1
